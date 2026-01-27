@@ -161,22 +161,30 @@ class AgentController {
       }
 
       const calculated = guide.calculated;
+      
+      // Get all guides and calculate ranking
+      const allGuides = guidesService.getAllGuides();
+      const sorted = allGuides.sort((a, b) => b.calculated.xp - a.calculated.xp);
+      const rankPosition = sorted.findIndex(g => g.guide_id === agentId) + 1;
+      const totalAgents = allGuides.length;
+      const percentile = Math.round(((totalAgents - rankPosition + 1) / totalAgents) * 100);
+      
       const metrics = [
         {
           key: 'aht',
           title: 'Handle Time',
-          value: `${guide.metrics.aht}:00`, // Format as time
-          target: `Target: 20:00`,
-          progress: Math.min((20 / guide.metrics.aht) * 100, 100), // Lower better
-          status: guide.metrics.aht <= 20 ? 'excellent' : guide.metrics.aht <= 25 ? 'on-track' : 'at-risk'
+          value: `${Math.floor(guide.metrics.aht)}:${String(Math.round((guide.metrics.aht % 1) * 60)).padStart(2, '0')}`, // Current (lower is better)
+          target: `23:00`, // Target (reversed - shows target first in display)
+          progress: Math.min((23 / guide.metrics.aht) * 100, 100), // Lower better: target/actual
+          status: guide.metrics.aht <= 23 ? 'excellent' : guide.metrics.aht <= 25 ? 'on-track' : 'at-risk'
         },
         {
           key: 'qa',
           title: 'Quality Score',
           value: guide.metrics.qa.toString(),
-          target: `Target: 4`,
-          progress: Math.min((guide.metrics.qa / 4) * 100, 100),
-          status: guide.metrics.qa >= 4 ? 'excellent' : guide.metrics.qa >= 3 ? 'on-track' : 'at-risk'
+          target: `Target: 80`,
+          progress: Math.min((guide.metrics.qa / 80) * 100, 100),
+          status: guide.metrics.qa >= 80 ? 'excellent' : guide.metrics.qa >= 70 ? 'on-track' : 'at-risk'
         },
         {
           key: 'revenue',
@@ -188,7 +196,7 @@ class AgentController {
         }
       ];
 
-      const leaderboard = guidesService.getGuidesBySupervisor(guide.supervisor)
+      const leaderboard = allGuides
         .sort((a, b) => b.calculated.xp - a.calculated.xp)
         .slice(0, 5)
         .map((g, index) => ({
@@ -202,6 +210,8 @@ class AgentController {
       const response = {
         score: calculated.points,
         xp: calculated.xp,
+        ranking: `${rankPosition}/${totalAgents}`,
+        percentile: percentile,
         level: Math.floor(Math.sqrt(calculated.xp / 100)) + 1,
         nextLevelXP: (Math.floor(Math.sqrt(calculated.xp / 100)) + 1) * (Math.floor(Math.sqrt(calculated.xp / 100)) + 1) * 100,
         levelProgress: ((calculated.xp % 100) / 100) * 100,
@@ -235,6 +245,31 @@ class AgentController {
       const teamGuides = guidesService.getGuidesBySupervisor(guide.supervisor);
       const avgScore = teamGuides.reduce((sum, g) => sum + g.calculated.points, 0) / teamGuides.length;
       const rank = teamGuides.sort((a, b) => b.calculated.xp - a.calculated.xp).findIndex(g => g.guide_id === agentId) + 1;
+
+      // Generate dummy KPI data for graphs
+      const generateKpiData = (metric, baseValue) => {
+        const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+        return days.map((name, idx) => ({
+          name,
+          value: Math.round(baseValue + (Math.random() - 0.5) * (baseValue * 0.3))
+        }));
+      };
+
+      // Generate weekly breakdown data for 4 weeks
+      const weeklyBreakdowns = [1, 2, 3, 4].map(week => ({
+        week: `Week ${week}`,
+        points: 500 + (week * 150) + Math.floor(Math.random() * 200),
+        trend: week > 2 ? '+12%' : '-5%',
+        days: [
+          { day: 'Mon', points: 200 + week * 20 },
+          { day: 'Tue', points: 250 + week * 15 },
+          { day: 'Wed', points: 180 + week * 25 },
+          { day: 'Thu', points: 300 + week * 10 },
+          { day: 'Fri', points: 280 + week * 20 },
+          { day: 'Sat', points: 150 + week * 30 },
+          { day: 'Sun', points: 220 + week * 18 }
+        ]
+      }));
 
       const response = {
         totalPoints: guide.calculated.points,
@@ -310,7 +345,18 @@ class AgentController {
         pointsLog: [
           { id: 1, source: 'QA Bonus', category: 'QA', amount: 50, time: '2 hours ago' },
           { id: 2, source: 'Revenue Milestone', category: 'Revenue', amount: 100, time: '1 day ago' }
-        ]
+        ],
+        // KPI Data for graphs
+        kpiData: {
+          newRevenue: generateKpiData('newRevenue', 45),
+          aht: generateKpiData('aht', 22),
+          qaScore: generateKpiData('qaScore', 78),
+          nrpc: generateKpiData('nrpc', 48),
+          newConversionPct: generateKpiData('newConversionPct', 16),
+          nps: generateKpiData('nps', 72)
+        },
+        // Weekly breakdown data
+        weeklyBreakdowns: weeklyBreakdowns
       };
 
       res.json(response);

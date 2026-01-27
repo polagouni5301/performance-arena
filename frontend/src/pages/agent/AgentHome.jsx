@@ -742,7 +742,7 @@ const AgentHome = () => {
             transition={{ delay: 0.5 }}
             className="glass-card p-8 flex flex-col items-center text-center"
           >
-            {/* Radial Score Meter */}
+            {/* Radial XPS Meter */}
             <div className="relative w-44 h-44 mb-4">
                 {/* Outer glow */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-cyan-500/20 blur-xl animate-pulse" />
@@ -779,24 +779,24 @@ const AgentHome = () => {
               
               {/* Center content */}
               <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <span className="text-5xl font-display font-bold text-foreground drop-shadow-[0_0_20px_hsla(280,100%,60%,0.5)]">
-                  {animatedScore}
+                <span className="text-3xl font-display font-bold text-foreground drop-shadow-[0_0_20px_hsla(280,100%,60%,0.5)]">
+                  {Math.floor(animatedXP)}/10
                 </span>
-                <span className="text-sm text-muted-foreground font-medium">out of 100</span>
+                <span className="text-xs text-muted-foreground font-medium">XPS Today</span>
               </div>
             </div>
 
             <h3 className="text-xl font-bold text-foreground mb-2">
-              Daily Performance Score
+              Total XPS
             </h3>
             <p className="text-sm text-muted-foreground mb-4 max-w-xs">
-              You are outperforming 95% of agents today. Keep up the momentum!
+              You've earned {Math.floor(animatedXP)} XP out of 10 maximum today. Complete more KPIs to maximize!
             </p>
             
             <Link to="/agent/performance">
               <button className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium text-sm
                                hover:shadow-[0_0_25px_hsla(280,100%,60%,0.5)] transition-all duration-300 hover:scale-[1.02]">
-                Improve Score <ArrowRight className="w-4 h-4" />
+                View Performance <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
           </motion.div>

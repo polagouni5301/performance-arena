@@ -179,17 +179,14 @@ const WeeklyChallenges = ({
         </div>
         
         <div className="flex items-center gap-3">
-          {/* Accept All Button */}
+          {/* Info: Accept from Spin Wheel */}
           {hasUnacceptedChallenges && (
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleAcceptAll}
-              className="px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary text-primary-foreground text-sm font-bold uppercase tracking-wider shadow-lg shadow-primary/30 flex items-center gap-2"
+            <motion.div
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-warning/10 border border-warning/40 text-warning text-sm font-medium"
             >
-              <Sparkles className="w-4 h-4" />
-              Accept All ({unacceptedChallenges.length})
-            </motion.button>
+              <Lock className="w-4 h-4" />
+              <span>Accept from 🎰 Lucky Spin Wheel</span>
+            </motion.div>
           )}
           
           {/* Token Counter */}
@@ -336,14 +333,10 @@ const WeeklyChallenges = ({
                 {/* Action Button */}
                 <div className="shrink-0">
                   {!isAccepted ? (
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      onClick={() => handleAccept(challenge.id)}
-                      className="px-4 py-2 rounded-lg bg-secondary/20 border border-secondary/50 text-secondary text-sm font-bold uppercase tracking-wider hover:bg-secondary/30 transition-colors"
-                    >
-                      Accept
-                    </motion.button>
+                    <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-muted/30 border border-border/50 text-muted-foreground text-xs font-bold uppercase tracking-wider">
+                      <Lock className="w-4 h-4" />
+                      Locked
+                    </div>
                   ) : canClaim ? (
                     <motion.button
                       whileHover={{ scale: 1.05 }}
