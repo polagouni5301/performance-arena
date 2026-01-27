@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { ArrowRight, Star, Flame, Lock, Target, Phone, CheckCircle, DollarSign, Heart, TrendingUp, Sparkles, Trophy, Zap, Gift, Clock, Medal, Crown, Award, Rocket, Shield, X } from "lucide-react";
+import { ArrowRight, Star, Flame, Lock, Target, Phone, CheckCircle, DollarSign, Heart, TrendingUp, Sparkles, Trophy, Zap, Gift, Clock, Medal, Crown, Award, Rocket, Shield, X, Activity, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { cn } from "../../lib/utils";
 import { useAgentDashboard } from "./hooks.jsx";
