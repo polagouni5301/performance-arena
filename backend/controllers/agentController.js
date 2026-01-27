@@ -15,35 +15,33 @@ function getCurrentWeek() {
   return `${startOfWeek.toLocaleDateString()} - ${endOfWeek.toLocaleDateString()}`;
 }
 
-      reward: 50, 
+function getDailyMissions(guide) {
+  if (!guide) return [];
+  return [
+    {
+      id: 1,
+      title: `Maintain AHT below 20`,
+      progress: Math.min(100 - (guide.metrics.aht / 20) * 100, 100),
+      total: 100,
+      reward: 50,
       completed: guide.metrics.aht <= 20,
       current: guide.metrics.aht
     },
-    { 
-      id: 2, 
-      title: `Achieve AOS above 100`, 
-      progress: Math.min(guide.metrics.aos, 100), 
-      total: 100, 
-      reward: 100, 
+    {
+      id: 2,
+      title: `Achieve AOS above 100`,
+      progress: Math.min(guide.metrics.aos, 100),
+      total: 100,
+      reward: 100,
       completed: guide.metrics.aos >= 100,
       current: guide.metrics.aos
     },
-    { 
-      id: 3, 
-      title: `Generate $500 revenue`, 
-      progress: Math.min(guide.metrics.revenue, 500), 
-      total: 500, 
-      reward: 75, 
-      completed: guide.metrics.revenue >= 500,
-      current: guide.metrics.revenue
-    }
-  ];
-}
-
-function getWeeklyChallenges(guide) {
-  if (!guide) return [];
-  return [
-    { 
+    {
+      id: 3,
+      title: `Generate $500 revenue`,
+      progress: Math.min(guide.metrics.revenue, 500),
+      total: 500,
+      reward: 75,
       id: 1, 
       title: 'NRPC Target', 
       value: guide.metrics.nrpc, 
@@ -694,9 +692,13 @@ class AgentController {
         ]).slice(0, 5),
         scratchCards,
         spinWins
-  }
+      };
 
-  // GET /api/agent/{agentId}/historical-performance
+      res.json(response);
+    } catch (error) {
+      res.status(500).json({ error: { code: 'INTERNAL_ERROR', message: error.message } });
+    }
+  }
   async getHistoricalPerformance(req, res) {
     try {
       const { agentId } = req.params;
