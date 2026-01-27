@@ -1,0 +1,5736 @@
+{
+  "703150212": {
+    "guide_id": "703150212",
+    "name": "C.Srikanth",
+    "department": "Reseller Support",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 55,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 55,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703181497": {
+    "guide_id": "703181497",
+    "name": "Selvam Tulasi",
+    "department": "Reseller Support",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 87,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 87,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703181975": {
+    "guide_id": "703181975",
+    "name": "Yerra Priyanka",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 73,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 25,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 73,
+      "new_refund_pct": 0.105263158,
+      "wow_score": 60
+    },
+    "calculated": {
+      "finalScore": 32.65037594,
+      "points": 32.65037594,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703189173": {
+    "guide_id": "703189173",
+    "name": "Bandela sarala",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 55,
+      "revenue": 199.77,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 1,
+      "aos": 199.77,
+      "qa_score": 55,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703193211": {
+    "guide_id": "703193211",
+    "name": "K Vaishnavi",
+    "department": "Reseller Support",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 20,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 29.325396824821432,
+      "points": 29.325396824821432,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703202382": {
+    "guide_id": "703202382",
+    "name": "Jadav Sridevi",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 69,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 38,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 69,
+      "new_refund_pct": 0.3,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25.428571428571427,
+      "points": 25.428571428571427,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703215002": {
+    "guide_id": "703215002",
+    "name": "S Bhargavi",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 69,
+      "revenue": 11.29,
+      "nps": 0,
+      "nrpc": 38,
+      "nconv_pct": 0.166666667,
+      "aos": 11.29,
+      "qa_score": 69,
+      "new_refund_pct": 0.3,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 29.15095850407423,
+      "points": 29.15095850407423,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703219588": {
+    "guide_id": "703219588",
+    "name": "vamshikiransanem",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.285714285714285,
+      "points": 35.285714285714285,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703219829": {
+    "guide_id": "703219829",
+    "name": "mohammed siraj",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 91,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 31.678571428571427,
+      "points": 31.678571428571427,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703224209": {
+    "guide_id": "703224209",
+    "name": "Mohammad Wasim",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 50,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 67,
+      "new_refund_pct": 0.217391304,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.31055900571428,
+      "points": 35.31055900571428,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703224777": {
+    "guide_id": "703224777",
+    "name": "RUTUJA ADMANE",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 10,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 22.533740768698753,
+      "points": 22.533740768698753,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703249380": {
+    "guide_id": "703249380",
+    "name": "MD Farhan Ahmed",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 67,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703270791": {
+    "guide_id": "703270791",
+    "name": "Dommati Sandeep Kumar",
+    "department": "Reseller Support",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 77,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 45,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 77,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.285714285714285,
+      "points": 35.285714285714285,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703271587": {
+    "guide_id": "703271587",
+    "name": "Priyanka Kadamandla",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 57,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.142857143,
+      "aos": 0,
+      "qa_score": 57,
+      "new_refund_pct": 0.206896552,
+      "wow_score": 71.42857143
+    },
+    "calculated": {
+      "finalScore": 34.224137931607146,
+      "points": 34.224137931607146,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703285168": {
+    "guide_id": "703285168",
+    "name": "Anju Kumari",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 57,
+      "revenue": 266.13,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.2,
+      "aos": 266.13,
+      "qa_score": 57,
+      "new_refund_pct": 0.206896552,
+      "wow_score": 71.42857143
+    },
+    "calculated": {
+      "finalScore": 54.224137931607146,
+      "points": 54.224137931607146,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703296383": {
+    "guide_id": "703296383",
+    "name": "Kavya Sree",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 28.26,
+      "nps": 0,
+      "nrpc": 40,
+      "nconv_pct": 0.047619048,
+      "aos": 28.26,
+      "qa_score": 78,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 34.317507418397625,
+      "points": 34.317507418397625,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703298374": {
+    "guide_id": "703298374",
+    "name": "Nayak Subhashree",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 76,
+      "revenue": 31.83,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.090909091,
+      "aos": 31.83,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 35.49455984174085,
+      "points": 35.49455984174085,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703299880": {
+    "guide_id": "703299880",
+    "name": "Mohammed Waseem Akram",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 87,
+      "revenue": 48.07,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0.230769231,
+      "aos": 16.02333333,
+      "qa_score": 87,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 30.282998130563797,
+      "points": 30.282998130563797,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703304421": {
+    "guide_id": "703304421",
+    "name": "Syed Mohammad Irtekaz Ahmer",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 73,
+      "revenue": 38.98,
+      "nps": 0,
+      "nrpc": 25,
+      "nconv_pct": 0.125,
+      "aos": 12.99333333,
+      "qa_score": 73,
+      "new_refund_pct": 0.105263158,
+      "wow_score": 60
+    },
+    "calculated": {
+      "finalScore": 36.93436319024728,
+      "points": 36.93436319024728,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703306522": {
+    "guide_id": "703306522",
+    "name": "Sushanth Jadhav",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 8,
+      "qa": 67,
+      "revenue": 118.91,
+      "nps": 0,
+      "nrpc": 10,
+      "nconv_pct": 0.176470588,
+      "aos": 39.63666667,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 35.60220983233212,
+      "points": 35.60220983233212,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703308681": {
+    "guide_id": "703308681",
+    "name": "Nikitha Kancharla",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 6.65,
+      "nps": 0,
+      "nrpc": 10,
+      "nconv_pct": 0,
+      "aos": 6.65,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 24.726289400416523,
+      "points": 24.726289400416523,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703311748": {
+    "guide_id": "703311748",
+    "name": "Medidal Santhoshi Kumari",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 204.15,
+      "nps": 0,
+      "nrpc": 50,
+      "nconv_pct": 0.238095238,
+      "aos": 40.83,
+      "qa_score": 67,
+      "new_refund_pct": 0.217391304,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 48.772477897900245,
+      "points": 48.772477897900245,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703312282": {
+    "guide_id": "703312282",
+    "name": "Irfana Syeda",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 40,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 78,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703312542": {
+    "guide_id": "703312542",
+    "name": "Rehana Shaik",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 69,
+      "revenue": 6.65,
+      "nps": 0,
+      "nrpc": 38,
+      "nconv_pct": 0.071428571,
+      "aos": 6.65,
+      "qa_score": 69,
+      "new_refund_pct": 0.3,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 27.621120060289197,
+      "points": 27.621120060289197,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703313378": {
+    "guide_id": "703313378",
+    "name": "Ravi Kumar",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 18,
+      "qa": 91,
+      "revenue": 499.76,
+      "nps": 50,
+      "nrpc": 35,
+      "nconv_pct": 0.3,
+      "aos": 166.5866667,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 63.21703296703297,
+      "points": 63.21703296703297,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703313694": {
+    "guide_id": "703313694",
+    "name": "Anitha Kavali",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.285714285714285,
+      "points": 35.285714285714285,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703315144": {
+    "guide_id": "703315144",
+    "name": "Sudhansu Sekhar Swain",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 76,
+      "revenue": 243.55,
+      "nps": 100,
+      "nrpc": 15,
+      "nconv_pct": 0.148148148,
+      "aos": 60.8875,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 60,
+      "points": 60,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703316118": {
+    "guide_id": "703316118",
+    "name": "Vishnuvardhan  jagannath",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 73,
+      "revenue": 654.12,
+      "nps": 0,
+      "nrpc": 25,
+      "nconv_pct": 0.333333333,
+      "aos": 109.02,
+      "qa_score": 73,
+      "new_refund_pct": 0.105263158,
+      "wow_score": 60
+    },
+    "calculated": {
+      "finalScore": 52.65037594,
+      "points": 52.65037594,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703316998": {
+    "guide_id": "703316998",
+    "name": "Rimsha Anjum",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 68,
+      "revenue": 347.87,
+      "nps": 100,
+      "nrpc": 29,
+      "nconv_pct": 0.285714286,
+      "aos": 57.97833333,
+      "qa_score": 68,
+      "new_refund_pct": 0.066666667,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 69.21107499976968,
+      "points": 69.21107499976968,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703317133": {
+    "guide_id": "703317133",
+    "name": "Satya Kandi",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 12,
+      "qa": 87,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 87,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703317614": {
+    "guide_id": "703317614",
+    "name": "Dharitri Charchi",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 69,
+      "revenue": 71.67,
+      "nps": 100,
+      "nrpc": 38,
+      "nconv_pct": 0.125,
+      "aos": 23.89,
+      "qa_score": 69,
+      "new_refund_pct": 0.3,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 48.30526117469738,
+      "points": 48.30526117469738,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703317923": {
+    "guide_id": "703317923",
+    "name": "Jaya Pandey",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 55,
+      "revenue": 205.78,
+      "nps": 100,
+      "nrpc": 30,
+      "nconv_pct": 0.25,
+      "aos": 51.445,
+      "qa_score": 55,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 56.961754038905376,
+      "points": 56.961754038905376,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703322123": {
+    "guide_id": "703322123",
+    "name": "Mallikarjun Punnala",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 10,
+      "qa": 77,
+      "revenue": 1190.96,
+      "nps": 100,
+      "nrpc": 45,
+      "nconv_pct": 0.2,
+      "aos": 238.192,
+      "qa_score": 77,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 70.28571428571428,
+      "points": 70.28571428571428,
+      "xp": 7
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703327927": {
+    "guide_id": "703327927",
+    "name": "Chandu Kumar",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 15,
+      "qa": 55,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 55,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703328898": {
+    "guide_id": "703328898",
+    "name": "Vallakati Kumar",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 7,
+      "qa": 57,
+      "revenue": 733.11,
+      "nps": 71.42857143,
+      "nrpc": 15,
+      "nconv_pct": 0.206896552,
+      "aos": 122.185,
+      "qa_score": 57,
+      "new_refund_pct": 0.206896552,
+      "wow_score": 71.42857143
+    },
+    "calculated": {
+      "finalScore": 69.22413793160715,
+      "points": 69.22413793160715,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703330109": {
+    "guide_id": "703330109",
+    "name": "Madhumitha Desharapu",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 77,
+      "revenue": 22.64,
+      "nps": 100,
+      "nrpc": 45,
+      "nconv_pct": 0.066666667,
+      "aos": 22.64,
+      "qa_score": 77,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 57.750270830389525,
+      "points": 57.750270830389525,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703330750": {
+    "guide_id": "703330750",
+    "name": "Uma Chouhan",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 40,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 78,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703334408": {
+    "guide_id": "703334408",
+    "name": "Ayesha Khaliq",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 87,
+      "revenue": 564.57,
+      "nps": 100,
+      "nrpc": 30,
+      "nconv_pct": 0.388888889,
+      "aos": 80.65285714,
+      "qa_score": 87,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 60,
+      "points": 60,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703335668": {
+    "guide_id": "703335668",
+    "name": "Harika Bodapothula",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 48.63,
+      "nps": 0,
+      "nrpc": 10,
+      "nconv_pct": 0.307692308,
+      "aos": 12.1575,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 26.54214828600835,
+      "points": 26.54214828600835,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703336494": {
+    "guide_id": "703336494",
+    "name": "Kishor Pabbathi",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 68,
+      "revenue": 151.29,
+      "nps": 0,
+      "nrpc": 29,
+      "nconv_pct": 0.25,
+      "aos": 30.258,
+      "qa_score": 68,
+      "new_refund_pct": 0.066666667,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 45.071499223310724,
+      "points": 45.071499223310724,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703338870": {
+    "guide_id": "703338870",
+    "name": "Suraj Keshwani",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 2344.61,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.260869565,
+      "aos": 390.7683333,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 55.285714285714285,
+      "points": 55.285714285714285,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703338883": {
+    "guide_id": "703338883",
+    "name": "Javvaji Manikumar Reddy",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 27,
+      "qa": 67,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 67,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703339788": {
+    "guide_id": "703339788",
+    "name": "Faheemunissa Faheemunissa",
+    "department": "Website Security Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 76,
+      "revenue": 4.96,
+      "nps": 100,
+      "nrpc": 15,
+      "nconv_pct": 0.1,
+      "aos": 4.96,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 41.63534454335641,
+      "points": 41.63534454335641,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703340012": {
+    "guide_id": "703340012",
+    "name": "Mekala Shirisha",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 91,
+      "revenue": 54.46,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0.235294118,
+      "aos": 13.615,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 36.16752625877255,
+      "points": 36.16752625877255,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703343923": {
+    "guide_id": "703343923",
+    "name": "Akhila Boda",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 8,
+      "qa": 80,
+      "revenue": 423.26,
+      "nps": 100,
+      "nrpc": 15,
+      "nconv_pct": 0.2,
+      "aos": 105.815,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 70.28571428571428,
+      "points": 70.28571428571428,
+      "xp": 7
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703347273": {
+    "guide_id": "703347273",
+    "name": "Nookala Naga Naveen",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 27,
+      "qa": 67,
+      "revenue": 941.42,
+      "nps": 100,
+      "nrpc": 50,
+      "nconv_pct": 0.217391304,
+      "aos": 188.284,
+      "qa_score": 67,
+      "new_refund_pct": 0.217391304,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 70.31055900571428,
+      "points": 70.31055900571428,
+      "xp": 7
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703367147": {
+    "guide_id": "703367147",
+    "name": "Adnan Mohammed",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 23.84,
+      "nps": 0,
+      "nrpc": 10,
+      "nconv_pct": 0.090909091,
+      "aos": 23.84,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 30.393945186766672,
+      "points": 30.393945186766672,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703367867": {
+    "guide_id": "703367867",
+    "name": "Deeksha Chettiwar",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 16.83,
+      "nps": 100,
+      "nrpc": 10,
+      "nconv_pct": 0.4,
+      "aos": 8.415,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 40.30822148086492,
+      "points": 40.30822148086492,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703371911": {
+    "guide_id": "703371911",
+    "name": "Muskan Quraishi",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 89.82,
+      "nps": 0,
+      "nrpc": 20,
+      "nconv_pct": 0.052631579,
+      "aos": 89.82,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 49.32539682482143,
+      "points": 49.32539682482143,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703378378": {
+    "guide_id": "703378378",
+    "name": "Jibran Farooqui",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 927.99,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0.210526316,
+      "aos": 231.9975,
+      "qa_score": 67,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703378808": {
+    "guide_id": "703378808",
+    "name": "Aslam Syed",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 68,
+      "revenue": 379.73,
+      "nps": 50,
+      "nrpc": 29,
+      "nconv_pct": 0.086956522,
+      "aos": 189.865,
+      "qa_score": 68,
+      "new_refund_pct": 0.066666667,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 66.63369963417583,
+      "points": 66.63369963417583,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703379067": {
+    "guide_id": "703379067",
+    "name": "Dudekula Basha",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 169.69,
+      "nps": 0,
+      "nrpc": 50,
+      "nconv_pct": 0.307692308,
+      "aos": 42.4225,
+      "qa_score": 67,
+      "new_refund_pct": 0.217391304,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 49.29753559654844,
+      "points": 49.29753559654844,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703379305": {
+    "guide_id": "703379305",
+    "name": "Samreen K",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 55,
+      "revenue": 361.74,
+      "nps": 100,
+      "nrpc": 30,
+      "nconv_pct": 0.5,
+      "aos": 36.174,
+      "qa_score": 55,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 51.92680514342236,
+      "points": 51.92680514342236,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703379313": {
+    "guide_id": "703379313",
+    "name": "Amgoth Mounika",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 137.41,
+      "nps": 0,
+      "nrpc": 50,
+      "nconv_pct": 0.2,
+      "aos": 27.482,
+      "qa_score": 67,
+      "new_refund_pct": 0.217391304,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 44.37155471952899,
+      "points": 44.37155471952899,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703379328": {
+    "guide_id": "703379328",
+    "name": "Mrinal Mayank",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 87,
+      "revenue": 135.52,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0.142857143,
+      "aos": 67.76,
+      "qa_score": 87,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703379330": {
+    "guide_id": "703379330",
+    "name": "Abdul Basha",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 156.08,
+      "nps": 100,
+      "nrpc": 35,
+      "nconv_pct": 0.347826087,
+      "aos": 19.51,
+      "qa_score": 67,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 46.432575008242665,
+      "points": 46.432575008242665,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703379409": {
+    "guide_id": "703379409",
+    "name": "Indarpal Singh",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 73,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 25,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 73,
+      "new_refund_pct": 0.105263158,
+      "wow_score": 60
+    },
+    "calculated": {
+      "finalScore": 32.65037594,
+      "points": 32.65037594,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703380053": {
+    "guide_id": "703380053",
+    "name": "Zubair Khan",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 57,
+      "revenue": 17.93,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.041666667,
+      "aos": 17.93,
+      "qa_score": 57,
+      "new_refund_pct": 0.206896552,
+      "wow_score": 71.42857143
+    },
+    "calculated": {
+      "finalScore": 40.13577657321611,
+      "points": 40.13577657321611,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703380306": {
+    "guide_id": "703380306",
+    "name": "Koyyada Vishal",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 69,
+      "revenue": 67.63,
+      "nps": 0,
+      "nrpc": 38,
+      "nconv_pct": 0.125,
+      "aos": 33.815,
+      "qa_score": 69,
+      "new_refund_pct": 0.3,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 36.577598794216,
+      "points": 36.577598794216,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703384970": {
+    "guide_id": "703384970",
+    "name": "Devendhar Rathlavath",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 77,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 45,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 77,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.285714285714285,
+      "points": 35.285714285714285,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703385487": {
+    "guide_id": "703385487",
+    "name": "Amanuddin Syed",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 77,
+      "revenue": 128.23,
+      "nps": -50,
+      "nrpc": 45,
+      "nconv_pct": 0.133333333,
+      "aos": 64.115,
+      "qa_score": 77,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 55.285714285714285,
+      "points": 55.285714285714285,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703386104": {
+    "guide_id": "703386104",
+    "name": "Chandanapriya Kandharoju",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 331.5,
+      "nps": 0,
+      "nrpc": 40,
+      "nconv_pct": 0.115384615,
+      "aos": 110.5,
+      "qa_score": 78,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703386724": {
+    "guide_id": "703386724",
+    "name": "Aziz Abdul",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 73,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 25,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 73,
+      "new_refund_pct": 0.105263158,
+      "wow_score": 60
+    },
+    "calculated": {
+      "finalScore": 32.65037594,
+      "points": 32.65037594,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703386871": {
+    "guide_id": "703386871",
+    "name": "Nadhirigari Aparanji",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 76,
+      "revenue": 157.39,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.15,
+      "aos": 52.46333333,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 42.29750521925486,
+      "points": 42.29750521925486,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703386878": {
+    "guide_id": "703386878",
+    "name": "Vitthal Shelke",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 55,
+      "revenue": 1221.84,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0.625,
+      "aos": 122.184,
+      "qa_score": 55,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703391627": {
+    "guide_id": "703391627",
+    "name": "Ibrahim Mohammed",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.285714285714285,
+      "points": 35.285714285714285,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703391959": {
+    "guide_id": "703391959",
+    "name": "Khadeerpasha Syed",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 556.4,
+      "nps": 100,
+      "nrpc": 20,
+      "nconv_pct": 0.304347826,
+      "aos": 79.48571429,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 64.32539682482142,
+      "points": 64.32539682482142,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703392712": {
+    "guide_id": "703392712",
+    "name": "Mounika Chauhan",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 91,
+      "revenue": 52.04,
+      "nps": 100,
+      "nrpc": 35,
+      "nconv_pct": 0.125,
+      "aos": 26.02,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 55.25753614996938,
+      "points": 55.25753614996938,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703394707": {
+    "guide_id": "703394707",
+    "name": "Owiz Mohammad",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 20,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 29.325396824821432,
+      "points": 29.325396824821432,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703395406": {
+    "guide_id": "703395406",
+    "name": "Summaiya Syeda",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 68,
+      "revenue": 46.41,
+      "nps": 100,
+      "nrpc": 29,
+      "nconv_pct": 0.166666667,
+      "aos": 15.47,
+      "qa_score": 68,
+      "new_refund_pct": 0.066666667,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 55.19579859686826,
+      "points": 55.19579859686826,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703396740": {
+    "guide_id": "703396740",
+    "name": "Pooja Kumari",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 73,
+      "revenue": 174.19,
+      "nps": 0,
+      "nrpc": 25,
+      "nconv_pct": 0.16,
+      "aos": 43.5475,
+      "qa_score": 73,
+      "new_refund_pct": 0.105263158,
+      "wow_score": 60
+    },
+    "calculated": {
+      "finalScore": 47.008272412139796,
+      "points": 47.008272412139796,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703397576": {
+    "guide_id": "703397576",
+    "name": "Fatima Mohammad",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 0,
+      "nps": -100,
+      "nrpc": 20,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 29.325396824821432,
+      "points": 29.325396824821432,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703399503": {
+    "guide_id": "703399503",
+    "name": "Prasanna Kamlekar",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 76,
+      "revenue": 11.28,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0,
+      "aos": 11.28,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 28.719090009891197,
+      "points": 28.719090009891197,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703399626": {
+    "guide_id": "703399626",
+    "name": "Pallavi Prem",
+    "department": "Website Security Support",
+    "supervisor": "Manoj Agarwal",
+    "manager": "Prabhunath_DHE",
+    "metrics": {
+      "aht": 13,
+      "qa": 91,
+      "revenue": 421.39,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0.333333333,
+      "aos": 70.23166667,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 51.67857142857143,
+      "points": 51.67857142857143,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703399741": {
+    "guide_id": "703399741",
+    "name": "Saiprasanna Soppary",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 76,
+      "revenue": 73.68,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.19047619,
+      "aos": 18.42,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 31.073194856577647,
+      "points": 31.073194856577647,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703402770": {
+    "guide_id": "703402770",
+    "name": "Ashwith Kotaru",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 91,
+      "revenue": 67.39,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0.166666667,
+      "aos": 33.695,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 42.788034006876735,
+      "points": 42.788034006876735,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703403116": {
+    "guide_id": "703403116",
+    "name": "Sohail Mohammad",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 57,
+      "revenue": 5.19,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0,
+      "aos": 5.19,
+      "qa_score": 57,
+      "new_refund_pct": 0.206896552,
+      "wow_score": 71.42857143
+    },
+    "calculated": {
+      "finalScore": 35.93531498403049,
+      "points": 35.93531498403049,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703403390": {
+    "guide_id": "703403390",
+    "name": "Murali Krishna",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 87,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 87,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703403396": {
+    "guide_id": "703403396",
+    "name": "Kavya Deshagani",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 18,
+      "qa": 78,
+      "revenue": 307.93,
+      "nps": 0,
+      "nrpc": 40,
+      "nconv_pct": 0,
+      "aos": 76.9825,
+      "qa_score": 78,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703410233": {
+    "guide_id": "703410233",
+    "name": "Mazen Mirza",
+    "department": "Reseller Support",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 1,
+      "aos": 0,
+      "qa_score": 67,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703410558": {
+    "guide_id": "703410558",
+    "name": "Asra Begum",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 55,
+      "revenue": 20.95,
+      "nps": 100,
+      "nrpc": 30,
+      "nconv_pct": 0.074074074,
+      "aos": 10.475,
+      "qa_score": 55,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 43.45367622815694,
+      "points": 43.45367622815694,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703411622": {
+    "guide_id": "703411622",
+    "name": "Jabiulla Shaik",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 57,
+      "revenue": 116.21,
+      "nps": 50,
+      "nrpc": 15,
+      "nconv_pct": 0.181818182,
+      "aos": 29.0525,
+      "qa_score": 57,
+      "new_refund_pct": 0.206896552,
+      "wow_score": 71.42857143
+    },
+    "calculated": {
+      "finalScore": 55.341399338186065,
+      "points": 55.341399338186065,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703412111": {
+    "guide_id": "703412111",
+    "name": "Varaprasad Balla",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 10,
+      "qa": 68,
+      "revenue": 383.52,
+      "nps": 100,
+      "nrpc": 29,
+      "nconv_pct": 0.066666667,
+      "aos": 191.76,
+      "qa_score": 68,
+      "new_refund_pct": 0.066666667,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 70.09523809571428,
+      "points": 70.09523809571428,
+      "xp": 7
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703413133": {
+    "guide_id": "703413133",
+    "name": "Nitesh Yadav",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 179.97,
+      "nps": -100,
+      "nrpc": 15,
+      "nconv_pct": 0.421052632,
+      "aos": 22.49625,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 42.70287551222269,
+      "points": 42.70287551222269,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703413170": {
+    "guide_id": "703413170",
+    "name": "Suhana Shaik",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 57,
+      "revenue": 607.59,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.318181818,
+      "aos": 86.79857143,
+      "qa_score": 57,
+      "new_refund_pct": 0.206896552,
+      "wow_score": 71.42857143
+    },
+    "calculated": {
+      "finalScore": 54.224137931607146,
+      "points": 54.224137931607146,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703413472": {
+    "guide_id": "703413472",
+    "name": "Vaseema Mohd",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 209.58,
+      "nps": 100,
+      "nrpc": 15,
+      "nconv_pct": 0.357142857,
+      "aos": 41.916,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 64.10569450332062,
+      "points": 64.10569450332062,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703413607": {
+    "guide_id": "703413607",
+    "name": "Karthik Sandhiri",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 57,
+      "revenue": 29.24,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0,
+      "aos": 29.24,
+      "qa_score": 57,
+      "new_refund_pct": 0.206896552,
+      "wow_score": 71.42857143
+    },
+    "calculated": {
+      "finalScore": 43.864757779942124,
+      "points": 43.864757779942124,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703413735": {
+    "guide_id": "703413735",
+    "name": "Balakrishna Mullapalam",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 448.21,
+      "nps": 0,
+      "nrpc": 20,
+      "nconv_pct": 0.375,
+      "aos": 149.4033333,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 49.32539682482143,
+      "points": 49.32539682482143,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703413760": {
+    "guide_id": "703413760",
+    "name": "Sameera Sameera",
+    "department": "Reseller Support",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 40,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 78,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25,
+      "points": 25,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703414356": {
+    "guide_id": "703414356",
+    "name": "Bhanu Prakash V",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 356.9,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0.333333333,
+      "aos": 89.225,
+      "qa_score": 67,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703414452": {
+    "guide_id": "703414452",
+    "name": "Sruthi Vakada",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 73.73,
+      "nps": 100,
+      "nrpc": 20,
+      "nconv_pct": 0.294117647,
+      "aos": 14.746,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 49.18724977569516,
+      "points": 49.18724977569516,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703414474": {
+    "guide_id": "703414474",
+    "name": "Juhi Mishra",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 87,
+      "revenue": 562.47,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0.366666667,
+      "aos": 51.13363636,
+      "qa_score": 87,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 41.859095403890535,
+      "points": 41.859095403890535,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703414870": {
+    "guide_id": "703414870",
+    "name": "Arra Sai Ganesh Raj",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 207.25,
+      "nps": 100,
+      "nrpc": 20,
+      "nconv_pct": 0.238095238,
+      "aos": 41.45,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 57.99173378492694,
+      "points": 57.99173378492694,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703414983": {
+    "guide_id": "703414983",
+    "name": "Sneha Kotturi",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 15,
+      "qa": 76,
+      "revenue": 115.49,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0,
+      "aos": 115.49,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703415971": {
+    "guide_id": "703415971",
+    "name": "Akshay Benadict Manjali",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 78,
+      "revenue": 59.14,
+      "nps": 100,
+      "nrpc": 40,
+      "nconv_pct": 0.28,
+      "aos": 8.448571429,
+      "qa_score": 78,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 42.78554943257501,
+      "points": 42.78554943257501,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703416280": {
+    "guide_id": "703416280",
+    "name": "Tanveer Begum",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 69,
+      "revenue": 1.1,
+      "nps": 0,
+      "nrpc": 38,
+      "nconv_pct": 0.038461538,
+      "aos": 1.1,
+      "qa_score": 69,
+      "new_refund_pct": 0.3,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 25.79124864584805,
+      "points": 25.79124864584805,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703416678": {
+    "guide_id": "703416678",
+    "name": "Mohammed Wahabuddin Nabi",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 77,
+      "revenue": 9.98,
+      "nps": 0,
+      "nrpc": 45,
+      "nconv_pct": 0.055555556,
+      "aos": 9.98,
+      "qa_score": 77,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 38.57618576609674,
+      "points": 38.57618576609674,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703416786": {
+    "guide_id": "703416786",
+    "name": "Mohammed Nawaz",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 24.27,
+      "nps": 100,
+      "nrpc": 15,
+      "nconv_pct": 0.058823529,
+      "aos": 24.27,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 58.28769252508125,
+      "points": 58.28769252508125,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703416975": {
+    "guide_id": "703416975",
+    "name": "Mohammed Imran",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 10,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 22.533740768698753,
+      "points": 22.533740768698753,
+      "xp": 2
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703416980": {
+    "guide_id": "703416980",
+    "name": "Shaik Salman",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 54.41,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.176470588,
+      "aos": 18.13666667,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 41.265492284395464,
+      "points": 41.265492284395464,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703416995": {
+    "guide_id": "703416995",
+    "name": "Shaik Shamsheer",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 237.59,
+      "nps": 100,
+      "nrpc": 35,
+      "nconv_pct": 0.086956522,
+      "aos": 118.795,
+      "qa_score": 67,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 60,
+      "points": 60,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703417501": {
+    "guide_id": "703417501",
+    "name": "Syed Salman",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 76.25,
+      "nps": 0,
+      "nrpc": 10,
+      "nconv_pct": 0.074074074,
+      "aos": 38.125,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 35.103803412945375,
+      "points": 35.103803412945375,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703417653": {
+    "guide_id": "703417653",
+    "name": "Siddartha M",
+    "department": "Reseller Support",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 91,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 31.678571428571427,
+      "points": 31.678571428571427,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703430108": {
+    "guide_id": "703430108",
+    "name": "Idris Mohammed",
+    "department": "C3 Support",
+    "supervisor": "Perumanla Rajitha",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 76,
+      "revenue": 95.58,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.090909091,
+      "aos": 47.79,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 40.7566765578635,
+      "points": 40.7566765578635,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703430162": {
+    "guide_id": "703430162",
+    "name": "Ismail MD",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 91,
+      "revenue": 6.65,
+      "nps": 0,
+      "nrpc": 35,
+      "nconv_pct": 0.047619048,
+      "aos": 6.65,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 33.8711200602892,
+      "points": 33.8711200602892,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703430436": {
+    "guide_id": "703430436",
+    "name": "Anup Sharma",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 50,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 67,
+      "new_refund_pct": 0.217391304,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.31055900571428,
+      "points": 35.31055900571428,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703430532": {
+    "guide_id": "703430532",
+    "name": "Rishav Kumar",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 11.59,
+      "nps": 100,
+      "nrpc": 35,
+      "nconv_pct": 0.125,
+      "aos": 3.863333333,
+      "qa_score": 67,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 41.27376634784042,
+      "points": 41.27376634784042,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703430552": {
+    "guide_id": "703430552",
+    "name": "Sai Badri",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 80,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 80,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.285714285714285,
+      "points": 35.285714285714285,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703430730": {
+    "guide_id": "703430730",
+    "name": "Shivani Gaddam",
+    "department": "Reseller Support",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 50,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 67,
+      "new_refund_pct": 0.217391304,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.31055900571428,
+      "points": 35.31055900571428,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703431080": {
+    "guide_id": "703431080",
+    "name": "Lolitha Dachepally",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 77,
+      "revenue": 93.5,
+      "nps": 0,
+      "nrpc": 45,
+      "nconv_pct": 2,
+      "aos": 46.75,
+      "qa_score": 77,
+      "new_refund_pct": 0.2,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 50.6994960199708,
+      "points": 50.6994960199708,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703431148": {
+    "guide_id": "703431148",
+    "name": "Ramesh Mangali",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 55,
+      "revenue": 154.35,
+      "nps": 0,
+      "nrpc": 30,
+      "nconv_pct": 0.142857143,
+      "aos": 77.175,
+      "qa_score": 55,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45,
+      "points": 45,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703431222": {
+    "guide_id": "703431222",
+    "name": "Tejaswini Bhusharajula",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 67,
+      "revenue": 176.84,
+      "nps": 100,
+      "nrpc": 10,
+      "nconv_pct": 0.388888889,
+      "aos": 25.26285714,
+      "qa_score": 67,
+      "new_refund_pct": 0.176470588,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45.863070521418834,
+      "points": 45.863070521418834,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703431440": {
+    "guide_id": "703431440",
+    "name": "Rohini Patil",
+    "department": "C3 Support",
+    "supervisor": "Vineeth Thimmapurapu",
+    "manager": "Seema_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 69,
+      "revenue": 253.68,
+      "nps": 100,
+      "nrpc": 38,
+      "nconv_pct": 0.206896552,
+      "aos": 42.28,
+      "qa_score": 69,
+      "new_refund_pct": 0.3,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 54.36856483444021,
+      "points": 54.36856483444021,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703440049": {
+    "guide_id": "703440049",
+    "name": "Avinash Nedunuri",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 38,
+      "qa": 73,
+      "revenue": 209.85,
+      "nps": 60,
+      "nrpc": 25,
+      "nconv_pct": 0.105263158,
+      "aos": 104.925,
+      "qa_score": 73,
+      "new_refund_pct": 0.105263158,
+      "wow_score": 60
+    },
+    "calculated": {
+      "finalScore": 66.49652978615384,
+      "points": 66.49652978615384,
+      "xp": 6
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703442829": {
+    "guide_id": "703442829",
+    "name": "Sheshadri Ranga",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 23,
+      "qa": 78,
+      "revenue": 101.09,
+      "nps": 33.33333333,
+      "nrpc": 20,
+      "nconv_pct": 0.111111111,
+      "aos": 50.545,
+      "qa_score": 78,
+      "new_refund_pct": 0.111111111,
+      "wow_score": 33.33333333
+    },
+    "calculated": {
+      "finalScore": 53.68272265022076,
+      "points": 53.68272265022076,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703442846": {
+    "guide_id": "703442846",
+    "name": "Vydurya Kondabathini",
+    "department": "Messaging - Sales",
+    "supervisor": "Jose Sanjo",
+    "manager": "Asween",
+    "metrics": {
+      "aht": 39,
+      "qa": 69,
+      "revenue": 197.67,
+      "nps": 0,
+      "nrpc": 38,
+      "nconv_pct": 0.272727273,
+      "aos": 65.89,
+      "qa_score": 69,
+      "new_refund_pct": 0.3,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 45.42857142857143,
+      "points": 45.42857142857143,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703442856": {
+    "guide_id": "703442856",
+    "name": "Samad Abdul",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 73,
+      "revenue": 72.76,
+      "nps": -100,
+      "nrpc": 25,
+      "nconv_pct": 0.2,
+      "aos": 24.25333333,
+      "qa_score": 73,
+      "new_refund_pct": 0.105263158,
+      "wow_score": 60
+    },
+    "calculated": {
+      "finalScore": 40.64685906891526,
+      "points": 40.64685906891526,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703442987": {
+    "guide_id": "703442987",
+    "name": "Arvind Sharma",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 91,
+      "revenue": 22.87,
+      "nps": 100,
+      "nrpc": 35,
+      "nconv_pct": 0.074074074,
+      "aos": 11.435,
+      "qa_score": 91,
+      "new_refund_pct": 0.3,
+      "wow_score": 50
+    },
+    "calculated": {
+      "finalScore": 50.44876595544251,
+      "points": 50.44876595544251,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703443175": {
+    "guide_id": "703443175",
+    "name": "Bibhuseet Samal",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 87,
+      "revenue": 61.53,
+      "nps": 100,
+      "nrpc": 30,
+      "nconv_pct": 0.095238095,
+      "aos": 30.765,
+      "qa_score": 87,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 50.14342235410485,
+      "points": 50.14342235410485,
+      "xp": 5
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703443179": {
+    "guide_id": "703443179",
+    "name": "Mani Konda",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 68,
+      "revenue": 15.15,
+      "nps": 0,
+      "nrpc": 29,
+      "nconv_pct": 0.05,
+      "aos": 15.15,
+      "qa_score": 68,
+      "new_refund_pct": 0.066666667,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 40.09029249729688,
+      "points": 40.09029249729688,
+      "xp": 4
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703443183": {
+    "guide_id": "703443183",
+    "name": "Sukhdeep Singh",
+    "department": "Hosting Support Web Pro",
+    "supervisor": "Padmini Addy",
+    "manager": "Seema_Onepro",
+    "metrics": {
+      "aht": 13,
+      "qa": 68,
+      "revenue": 0,
+      "nps": 0,
+      "nrpc": 29,
+      "nconv_pct": 0,
+      "aos": 0,
+      "qa_score": 68,
+      "new_refund_pct": 0.066666667,
+      "wow_score": 100
+    },
+    "calculated": {
+      "finalScore": 35.095238095714286,
+      "points": 35.095238095714286,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  },
+  "703443199": {
+    "guide_id": "703443199",
+    "name": "Hadassah Peeka",
+    "department": "C3 Support",
+    "supervisor": "Kanukunta Deepika",
+    "manager": "Prabhunath_IB",
+    "metrics": {
+      "aht": 13,
+      "qa": 76,
+      "revenue": 192.95,
+      "nps": 0,
+      "nrpc": 15,
+      "nconv_pct": 0.291666667,
+      "aos": 27.56428571,
+      "qa_score": 76,
+      "new_refund_pct": 0,
+      "wow_score": 0
+    },
+    "calculated": {
+      "finalScore": 34.08812585229146,
+      "points": 34.08812585229146,
+      "xp": 3
+    },
+    "streak": 1,
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Amazon Gift Card $50",
+        "category": "gift-cards",
+        "pointCost": 5000,
+        "rarity": "rare",
+        "inStock": true,
+        "stockCount": 15
+      },
+      {
+        "id": "r2",
+        "name": "Starbucks Voucher $25",
+        "category": "vouchers",
+        "pointCost": 2500,
+        "rarity": "common",
+        "inStock": true,
+        "stockCount": 50
+      }
+    ],
+    "registered": false,
+    "loginInfo": null
+  }
+}

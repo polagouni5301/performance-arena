@@ -1,0 +1,150 @@
+[
+  {
+    "id": "CONTEST-1769517695328",
+    "name": "Q1 performance",
+    "description": "Be the NPS champ",
+    "startDate": "2026-01-27",
+    "endDate": "2026-01-28",
+    "targetAudience": "all",
+    "bannerText": "Win Big!",
+    "contestIcon": "trophy",
+    "logoUrl": "",
+    "theme": {
+      "primary": "#3B82F6",
+      "secondary": "#0EA5E9",
+      "accent": "#06B6D4",
+      "backgroundColor": "#0f172a"
+    },
+    "metrics": [
+      {
+        "id": 1769517642859,
+        "name": "Customer Satisfaction (CSAT)",
+        "target": ">= 95%",
+        "weightage": 25
+      },
+      {
+        "id": 1769517643459,
+        "name": "Customer Retention",
+        "target": ">= 92%",
+        "weightage": 10
+      },
+      {
+        "id": 1769517643895,
+        "name": "Average Handle Time (AHT)",
+        "target": "<= 180s",
+        "weightage": 20
+      },
+      {
+        "id": 1769517644328,
+        "name": "First Call Resolution (FCR)",
+        "target": ">= 85%",
+        "weightage": 20
+      },
+      {
+        "id": 1769517644774,
+        "name": "Quality Assurance Score",
+        "target": ">= 90%",
+        "weightage": 15
+      },
+      {
+        "id": 1769517645477,
+        "name": "Sales Conversion Rate",
+        "target": ">= 15%",
+        "weightage": 10
+      }
+    ],
+    "rewards": [
+      {
+        "id": 1769517656771,
+        "position": "1st Place",
+        "title": "Champion prize",
+        "description": "",
+        "points": 10
+      }
+    ],
+    "status": "published",
+    "creatorId": "mgr_1769510143523",
+    "creatorName": "asween",
+    "createdById": "mgr_1769510143523",
+    "createdByRole": "admin",
+    "createdByName": "asween",
+    "createdAt": "2026-01-27T12:41:35.330Z",
+    "updatedAt": "2026-01-27T12:41:35.331Z",
+    "participants": [],
+    "results": null
+  },
+  {
+    "id": "CONTEST-1769518276843",
+    "name": "New Revenue Comp",
+    "description": "Revenue champ",
+    "startDate": "2026-01-27",
+    "endDate": "2026-01-29",
+    "targetAudience": "all",
+    "bannerText": "",
+    "contestIcon": "zap",
+    "logoUrl": "",
+    "theme": {
+      "primary": "#EF4444",
+      "secondary": "#F97316",
+      "accent": "#FBBF24",
+      "backgroundColor": "#1a1a1a"
+    },
+    "metrics": [
+      {
+        "id": 1769518238803,
+        "name": "Customer Satisfaction (CSAT)",
+        "target": ">= 95%",
+        "weightage": 25
+      },
+      {
+        "id": 1769518239322,
+        "name": "Average Handle Time (AHT)",
+        "target": "<= 180s",
+        "weightage": 20
+      },
+      {
+        "id": 1769518239786,
+        "name": "First Call Resolution (FCR)",
+        "target": ">= 85%",
+        "weightage": 20
+      },
+      {
+        "id": 1769518240257,
+        "name": "Quality Assurance Score",
+        "target": ">= 90%",
+        "weightage": 15
+      },
+      {
+        "id": 1769518240835,
+        "name": "Sales Conversion Rate",
+        "target": ">= 15%",
+        "weightage": 10
+      },
+      {
+        "id": 1769518241892,
+        "name": "Customer Retention",
+        "target": ">= 92%",
+        "weightage": 10
+      }
+    ],
+    "rewards": [
+      {
+        "id": 1769518250266,
+        "position": "",
+        "title": "Champ Prize",
+        "description": "get a sipper",
+        "points": 1000
+      }
+    ],
+    "status": "published",
+    "creatorId": "mgr_1769510143523",
+    "creatorName": "asween",
+    "createdById": "mgr_1769510143523",
+    "createdByRole": "manager",
+    "createdByName": "asween",
+    "createdAt": "2026-01-27T12:51:16.843Z",
+    "updatedAt": "2026-01-27T12:51:16.845Z",
+    "participants": [],
+    "results": null
+  }
+]

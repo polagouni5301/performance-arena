@@ -1,0 +1,1272 @@
+[
+  {
+    "transaction_id": "txn_703343923_1",
+    "user_id": 703343923,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 87,
+    "xp": 188,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703440049_1",
+    "user_id": 703440049,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 108,
+    "xp": 142,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703327927_1",
+    "user_id": 703327927,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 147,
+    "xp": 127,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703338883_1",
+    "user_id": 703338883,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 77,
+    "xp": 293,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703403396_1",
+    "user_id": 703403396,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 105,
+    "xp": 203,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703322123_1",
+    "user_id": 703322123,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 135,
+    "xp": 194,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703347273_1",
+    "user_id": 703347273,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 122,
+    "xp": 194,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703313378_1",
+    "user_id": 703313378,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 137,
+    "xp": 253,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703317133_1",
+    "user_id": 703317133,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 58,
+    "xp": 206,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703442829_1",
+    "user_id": 703442829,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 51,
+    "xp": 135,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703414983_1",
+    "user_id": 703414983,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 60,
+    "xp": 172,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703306522_1",
+    "user_id": 703306522,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 75,
+    "xp": 133,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703328898_1",
+    "user_id": 703328898,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 148,
+    "xp": 199,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703412111_1",
+    "user_id": 703412111,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 133,
+    "xp": 193,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703442846_1",
+    "user_id": 703442846,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 147,
+    "xp": 205,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703313694_1",
+    "user_id": 703313694,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 76,
+    "xp": 143,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703386724_1",
+    "user_id": 703386724,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 52,
+    "xp": 139,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703189173_1",
+    "user_id": 703189173,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 69,
+    "xp": 228,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703249380_1",
+    "user_id": 703249380,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 111,
+    "xp": 107,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703312282_1",
+    "user_id": 703312282,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 56,
+    "xp": 121,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703431080_1",
+    "user_id": 703431080,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 132,
+    "xp": 140,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703224209_1",
+    "user_id": 703224209,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 91,
+    "xp": 148,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703219829_1",
+    "user_id": 703219829,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 70,
+    "xp": 100,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703403390_1",
+    "user_id": 703403390,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 107,
+    "xp": 136,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703394707_1",
+    "user_id": 703394707,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 91,
+    "xp": 158,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703399503_1",
+    "user_id": 703399503,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 79,
+    "xp": 242,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703224777_1",
+    "user_id": 703224777,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 119,
+    "xp": 236,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703403116_1",
+    "user_id": 703403116,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 85,
+    "xp": 168,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703443183_1",
+    "user_id": 703443183,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 113,
+    "xp": 192,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703202382_1",
+    "user_id": 703202382,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 123,
+    "xp": 226,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703219588_1",
+    "user_id": 703219588,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 50,
+    "xp": 246,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703181975_1",
+    "user_id": 703181975,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 59,
+    "xp": 286,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703150212_1",
+    "user_id": 703150212,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 66,
+    "xp": 189,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703410233_1",
+    "user_id": 703410233,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 114,
+    "xp": 284,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703413760_1",
+    "user_id": 703413760,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 148,
+    "xp": 267,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703270791_1",
+    "user_id": 703270791,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 122,
+    "xp": 206,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703430730_1",
+    "user_id": 703430730,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 79,
+    "xp": 183,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703417653_1",
+    "user_id": 703417653,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 131,
+    "xp": 244,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703181497_1",
+    "user_id": 703181497,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 135,
+    "xp": 180,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703193211_1",
+    "user_id": 703193211,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 100,
+    "xp": 281,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703339788_1",
+    "user_id": 703339788,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 145,
+    "xp": 282,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703367147_1",
+    "user_id": 703367147,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 80,
+    "xp": 215,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703285168_1",
+    "user_id": 703285168,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 136,
+    "xp": 234,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703378808_1",
+    "user_id": 703378808,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 106,
+    "xp": 122,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703317614_1",
+    "user_id": 703317614,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 64,
+    "xp": 154,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703391627_1",
+    "user_id": 703391627,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 135,
+    "xp": 295,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703379409_1",
+    "user_id": 703379409,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 91,
+    "xp": 102,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703317923_1",
+    "user_id": 703317923,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 73,
+    "xp": 285,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703378378_1",
+    "user_id": 703378378,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 83,
+    "xp": 286,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703296383_1",
+    "user_id": 703296383,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 89,
+    "xp": 268,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703330109_1",
+    "user_id": 703330109,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 138,
+    "xp": 196,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703311748_1",
+    "user_id": 703311748,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 97,
+    "xp": 235,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703340012_1",
+    "user_id": 703340012,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 137,
+    "xp": 131,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703299880_1",
+    "user_id": 703299880,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 81,
+    "xp": 155,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703414452_1",
+    "user_id": 703414452,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 80,
+    "xp": 184,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703315144_1",
+    "user_id": 703315144,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 138,
+    "xp": 237,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703431222_1",
+    "user_id": 703431222,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 116,
+    "xp": 168,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703380053_1",
+    "user_id": 703380053,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 105,
+    "xp": 124,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703367867_1",
+    "user_id": 703367867,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 135,
+    "xp": 221,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703392712_1",
+    "user_id": 703392712,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 122,
+    "xp": 130,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703379328_1",
+    "user_id": 703379328,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 122,
+    "xp": 130,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703371911_1",
+    "user_id": 703371911,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 136,
+    "xp": 163,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703298374_1",
+    "user_id": 703298374,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 70,
+    "xp": 226,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703308681_1",
+    "user_id": 703308681,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 73,
+    "xp": 202,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703271587_1",
+    "user_id": 703271587,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 64,
+    "xp": 247,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703316998_1",
+    "user_id": 703316998,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 72,
+    "xp": 188,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703215002_1",
+    "user_id": 703215002,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 106,
+    "xp": 118,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703338870_1",
+    "user_id": 703338870,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 84,
+    "xp": 135,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703304421_1",
+    "user_id": 703304421,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 123,
+    "xp": 288,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703386878_1",
+    "user_id": 703386878,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 79,
+    "xp": 219,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703379330_1",
+    "user_id": 703379330,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 92,
+    "xp": 109,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703415971_1",
+    "user_id": 703415971,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 100,
+    "xp": 136,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703385487_1",
+    "user_id": 703385487,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 145,
+    "xp": 204,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703430436_1",
+    "user_id": 703430436,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 54,
+    "xp": 195,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703442987_1",
+    "user_id": 703442987,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 118,
+    "xp": 166,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703443175_1",
+    "user_id": 703443175,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 123,
+    "xp": 178,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703397576_1",
+    "user_id": 703397576,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 141,
+    "xp": 278,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703443199_1",
+    "user_id": 703443199,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 123,
+    "xp": 113,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703335668_1",
+    "user_id": 703335668,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 96,
+    "xp": 298,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703411622_1",
+    "user_id": 703411622,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 75,
+    "xp": 134,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703443179_1",
+    "user_id": 703443179,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 127,
+    "xp": 230,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703312542_1",
+    "user_id": 703312542,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 144,
+    "xp": 247,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703430552_1",
+    "user_id": 703430552,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 146,
+    "xp": 250,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703442856_1",
+    "user_id": 703442856,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 119,
+    "xp": 191,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703379305_1",
+    "user_id": 703379305,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 63,
+    "xp": 154,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703416995_1",
+    "user_id": 703416995,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 137,
+    "xp": 271,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703330750_1",
+    "user_id": 703330750,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 79,
+    "xp": 194,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703416678_1",
+    "user_id": 703416678,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 131,
+    "xp": 160,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703379313_1",
+    "user_id": 703379313,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 86,
+    "xp": 155,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703402770_1",
+    "user_id": 703402770,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 67,
+    "xp": 217,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703334408_1",
+    "user_id": 703334408,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 71,
+    "xp": 113,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703413735_1",
+    "user_id": 703413735,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 142,
+    "xp": 234,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703430108_1",
+    "user_id": 703430108,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 88,
+    "xp": 269,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703416975_1",
+    "user_id": 703416975,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 110,
+    "xp": 216,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703413607_1",
+    "user_id": 703413607,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 54,
+    "xp": 217,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703336494_1",
+    "user_id": 703336494,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 99,
+    "xp": 299,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703380306_1",
+    "user_id": 703380306,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 56,
+    "xp": 100,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703413133_1",
+    "user_id": 703413133,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 75,
+    "xp": 211,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703399626_1",
+    "user_id": 703399626,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 51,
+    "xp": 252,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703414870_1",
+    "user_id": 703414870,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 110,
+    "xp": 250,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703399741_1",
+    "user_id": 703399741,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 59,
+    "xp": 131,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703417501_1",
+    "user_id": 703417501,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 94,
+    "xp": 272,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703413170_1",
+    "user_id": 703413170,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 61,
+    "xp": 100,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703395406_1",
+    "user_id": 703395406,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 134,
+    "xp": 128,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703416280_1",
+    "user_id": 703416280,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 77,
+    "xp": 115,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703413472_1",
+    "user_id": 703413472,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 126,
+    "xp": 150,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703316118_1",
+    "user_id": 703316118,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 64,
+    "xp": 273,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703410558_1",
+    "user_id": 703410558,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 145,
+    "xp": 218,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703414356_1",
+    "user_id": 703414356,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 51,
+    "xp": 122,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703386104_1",
+    "user_id": 703386104,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 122,
+    "xp": 263,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703384970_1",
+    "user_id": 703384970,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 137,
+    "xp": 178,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703379067_1",
+    "user_id": 703379067,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 116,
+    "xp": 173,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703430162_1",
+    "user_id": 703430162,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 73,
+    "xp": 244,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703414474_1",
+    "user_id": 703414474,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 123,
+    "xp": 238,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703391959_1",
+    "user_id": 703391959,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 135,
+    "xp": 201,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703386871_1",
+    "user_id": 703386871,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 126,
+    "xp": 293,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703416786_1",
+    "user_id": 703416786,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 106,
+    "xp": 281,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703396740_1",
+    "user_id": 703396740,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 98,
+    "xp": 153,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703431148_1",
+    "user_id": 703431148,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 109,
+    "xp": 131,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703430532_1",
+    "user_id": 703430532,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 143,
+    "xp": 249,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703431440_1",
+    "user_id": 703431440,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 95,
+    "xp": 245,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_703416980_1",
+    "user_id": 703416980,
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 92,
+    "xp": 176,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_mgr_2_1",
+    "user_id": "mgr_2",
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 132,
+    "xp": 230,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_mgr_6_1",
+    "user_id": "mgr_6",
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 57,
+    "xp": 257,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_mgr_6_1",
+    "user_id": "mgr_6",
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 61,
+    "xp": 153,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_mgr_6_1",
+    "user_id": "mgr_6",
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 143,
+    "xp": 227,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  },
+  {
+    "transaction_id": "txn_mgr_6_1",
+    "user_id": "mgr_6",
+    "date": "2026-01-27T14:13:47.615Z",
+    "points": 133,
+    "xp": 219,
+    "type": "earned",
+    "source": "performance",
+    "description": "Points from daily performance"
+  }
+]

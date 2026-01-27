@@ -1,0 +1,102 @@
+[
+  {
+    "user_id": 703343923,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 1,
+    "previous_rank": 2,
+    "total_points": 341,
+    "total_xp": 934,
+    "score": 148
+  },
+  {
+    "user_id": 703440049,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 2,
+    "previous_rank": 3,
+    "total_points": 546,
+    "total_xp": 867,
+    "score": 153
+  },
+  {
+    "user_id": 703327927,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 3,
+    "previous_rank": 4,
+    "total_points": 651,
+    "total_xp": 534,
+    "score": 112
+  },
+  {
+    "user_id": 703338883,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 4,
+    "previous_rank": 5,
+    "total_points": 440,
+    "total_xp": 1031,
+    "score": 133
+  },
+  {
+    "user_id": 703403396,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 5,
+    "previous_rank": 6,
+    "total_points": 373,
+    "total_xp": 649,
+    "score": 118
+  },
+  {
+    "user_id": 703322123,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 6,
+    "previous_rank": 7,
+    "total_points": 508,
+    "total_xp": 1253,
+    "score": 157
+  },
+  {
+    "user_id": 703347273,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 7,
+    "previous_rank": 8,
+    "total_points": 429,
+    "total_xp": 567,
+    "score": 126
+  },
+  {
+    "user_id": 703313378,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 8,
+    "previous_rank": 9,
+    "total_points": 561,
+    "total_xp": 1239,
+    "score": 85
+  },
+  {
+    "user_id": 703317133,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 9,
+    "previous_rank": 10,
+    "total_points": 625,
+    "total_xp": 1485,
+    "score": 169
+  },
+  {
+    "user_id": 703442829,
+    "period": "weekly",
+    "period_type": "current",
+    "rank": 10,
+    "previous_rank": 11,
+    "total_points": 322,
+    "total_xp": 1014,
+    "score": 129
+  }
+]
