@@ -27,7 +27,6 @@ import {
   Eye,
   Unlock,
   Box,
-  Card,
 } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { useAchievements, useRewardsVault } from "./hooks.jsx";
