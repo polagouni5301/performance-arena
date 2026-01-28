@@ -306,10 +306,12 @@ const PlayZone = () => {
             className="xl:col-span-1"
           >
             <div className="arena-panel p-4 border border-accent/20 h-full">
-             <ScratchRewardsPanel
-  cards={scratchCards}
-  onScratch={setActiveScratchCard}
-/>
+              <ScratchCardShowcase
+                cards={scratchCards}
+                meetsThreshold={todaysPerformance.meetsThreshold}
+                todaysMetric={todaysPerformance.metric}
+                onScratchCard={setActiveScratchCard}
+              />
             </div>
           </motion.div>
         </div>

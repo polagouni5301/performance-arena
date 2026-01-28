@@ -631,85 +631,114 @@ const RewardsAndAchievements = () => {
           </div>
 
           {/* Rewards Grid - Google Pay Style Cards */}
-          <div className="grid gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {relicsType === "scratch" && (
               <>
-                {/* Scratch Cards Display */}
+                {/* Scratch Cards Display - Sleek Card Design */}
                 {(rewardsData?.scratchCards || []).length === 0 ? (
-                  <div className="text-center py-8">
-                    <CreditCard className="w-12 h-12 mx-auto text-muted-foreground/40 mb-3" />
+                  <div className="col-span-full text-center py-12">
+                    <CreditCard className="w-16 h-16 mx-auto text-muted-foreground/40 mb-4" />
                     <p className="text-sm text-muted-foreground">No scratch cards yet</p>
                   </div>
                 ) : (
                   (rewardsData?.scratchCards || []).map((card, idx) => (
                     <motion.div
                       key={card.id}
-                      initial={{ opacity: 0, y: 10 }}
+                      initial={{ opacity: 0, y: 15 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: idx * 0.05 }}
+                      transition={{ delay: idx * 0.08 }}
+                      whileHover={{ y: -8, scale: 1.02 }}
                       className={cn(
-                        "relative p-4 rounded-xl border overflow-hidden transition-all hover:scale-105 cursor-pointer group",
+                        "relative h-48 rounded-2xl border overflow-hidden transition-all cursor-pointer group",
+                        "bg-gradient-to-br shadow-xl hover:shadow-2xl",
                         card.status === "pending"
-                          ? "bg-gradient-to-br from-yellow-500/15 via-yellow-500/10 to-amber-500/15 border-yellow-500/40 shadow-lg shadow-yellow-500/10"
+                          ? card.cardDesign?.gradient 
+                            ? `from-blue-600 to-cyan-500 border-blue-400/30`
+                            : "from-yellow-500 to-orange-500 border-yellow-400/30"
                           : card.status === "scratched"
-                          ? "bg-gradient-to-br from-success/15 via-emerald-500/10 to-teal-500/15 border-success/40 shadow-lg shadow-success/10"
-                          : "bg-gradient-to-br from-muted/20 to-muted/10 border-border/30 opacity-50"
+                          ? "from-emerald-600 to-teal-500 border-emerald-400/30"
+                          : "from-slate-600 to-slate-500 border-slate-400/20 opacity-60"
                       )}
                     >
-                      {/* Card Design Background */}
-                      {card.cardDesign && (
-                        <div className="absolute top-2 right-2 text-3xl opacity-20 group-hover:opacity-30 transition-opacity">
-                          {card.cardDesign.icon}
+                      {/* Animated Background Gradient */}
+                      <motion.div
+                        className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+                      />
+
+                      {/* Corner Accent Glow */}
+                      <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/20 rounded-full blur-3xl group-hover:bg-white/30 transition-all" />
+
+                      {/* Content Container */}
+                      <div className="relative z-10 h-full flex flex-col p-5">
+                        {/* Top Section - Icon & Expiry */}
+                        <div className="flex items-start justify-between mb-3">
+                          <motion.div
+                            className="text-4xl"
+                            animate={{ scale: [1, 1.1, 1], rotate: [0, 3, -3, 0] }}
+                            transition={{ duration: 4, repeat: Infinity }}
+                          >
+                            {card.cardDesign?.icon || "🎁"}
+                          </motion.div>
+                          
+                          {/* Status Badge */}
+                          <AnimatePresence>
+                            {card.status === "pending" && card.expiresIn && (
+                              <motion.span
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/25 text-white backdrop-blur-md border border-white/30 whitespace-nowrap"
+                              >
+                                {card.expiresIn}
+                              </motion.span>
+                            )}
+                            {card.status === "scratched" && (
+                              <motion.span
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/30 text-white backdrop-blur-md border border-white/40 flex items-center gap-1"
+                              >
+                                <Check className="w-3 h-3" />
+                                {card.points}
+                              </motion.span>
+                            )}
+                            {card.status === "expired" && (
+                              <motion.span
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-red-500/40 text-white backdrop-blur-md border border-red-400/50"
+                              >
+                                EXPIRED
+                              </motion.span>
+                            )}
+                          </AnimatePresence>
                         </div>
-                      )}
 
-                      {/* Status Badge */}
-                      <div className="absolute top-3 right-3 flex items-center gap-1">
-                        {card.status === "pending" && (
-                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-yellow-500/30 text-yellow-300 backdrop-blur-sm">
-                            {card.expiresIn}
-                          </span>
-                        )}
-                        {card.status === "scratched" && (
-                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-success/40 text-emerald-200 backdrop-blur-sm flex items-center gap-1">
-                            <Check className="w-3 h-3" />
-                            +{card.points} PTS
-                          </span>
-                        )}
-                        {card.status === "expired" && (
-                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-destructive/30 text-red-200 backdrop-blur-sm">
-                            EXPIRED
-                          </span>
-                        )}
-                      </div>
-
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <p className="text-xs text-muted-foreground/70 font-mono mb-1 tracking-widest">{card.date}</p>
-                          <h4 className="font-bold text-foreground text-sm mb-2">{card.name}</h4>
+                        {/* Middle Section - Card Details */}
+                        <div className="flex-1 flex flex-col">
+                          <h4 className="font-bold text-white text-base mb-1 tracking-wide">{card.name}</h4>
                           {card.cardDesign?.hint && (
-                            <p className="text-xs text-muted-foreground/60 italic">{card.cardDesign.hint}</p>
+                            <p className="text-xs text-white/80 leading-relaxed">{card.cardDesign.hint}</p>
                           )}
                         </div>
-                        {card.status === "scratched" && (
-                          <Check className="w-5 h-5 text-success ml-2 shrink-0" />
-                        )}
-                      </div>
 
-                      {card.status === "scratched" && (
-                        <p className="text-xs text-muted-foreground/60 mt-2 font-mono">
-                          Claimed on {card.claimedAt}
-                        </p>
-                      )}
-
-                      {card.status === "pending" && (
-                        <div className="mt-3 flex items-center justify-between">
-                          <span className="text-xs text-yellow-300/80 font-mono">TAP TO REVEAL</span>
-                          <motion.div animate={{ x: [0, 3, 0] }} transition={{ duration: 2, repeat: Infinity }}>
-                            <ChevronRight className="w-4 h-4 text-yellow-400/60" />
-                          </motion.div>
+                        {/* Bottom Section - Date & Action */}
+                        <div className="flex items-end justify-between pt-2">
+                          <p className="text-[10px] text-white/70 font-mono">{card.date}</p>
+                          {card.status === "pending" ? (
+                            <motion.div
+                              animate={{ scale: [1, 1.1, 1] }}
+                              transition={{ duration: 2, repeat: Infinity }}
+                              className="text-xs font-bold text-white"
+                            >
+                              TAP →
+                            </motion.div>
+                          ) : card.status === "scratched" ? (
+                            <div className="text-xs font-bold text-white flex items-center gap-1">
+                              <Check className="w-3 h-3" /> Claimed
+                            </div>
+                          ) : null}
                         </div>
-                      )}
+                      </div>
                     </motion.div>
                   ))
                 )}
@@ -718,36 +747,86 @@ const RewardsAndAchievements = () => {
 
             {relicsType === "wheel" && (
               <>
-                {/* Spin Wheel Wins Display */}
-                <div className="text-xs text-muted-foreground text-center py-2">Last 30 days</div>
+                {/* Spin Wheel Wins Display - Sleek Card Grid */}
+                <div className="text-xs text-muted-foreground text-center py-3 font-semibold">Last 30 days - Spin Wins</div>
                 {(rewardsData?.spinWins || []).length === 0 ? (
-                  <div className="text-center py-8">
-                    <Target className="w-12 h-12 mx-auto text-muted-foreground/40 mb-3" />
+                  <div className="col-span-full text-center py-12">
+                    <Target className="w-16 h-16 mx-auto text-muted-foreground/40 mb-4" />
                     <p className="text-sm text-muted-foreground">No spin wins yet</p>
                   </div>
                 ) : (
                   (rewardsData?.spinWins || []).map((win, idx) => (
                     <motion.div
                       key={win.id}
-                      initial={{ opacity: 0, y: 10 }}
+                      initial={{ opacity: 0, y: 15 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: idx * 0.05 }}
-                      className="p-4 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/30 hover:border-primary/50 transition-all"
+                      whileHover={{ y: -8, scale: 1.02 }}
+                      className={cn(
+                        "relative h-48 rounded-2xl border overflow-hidden transition-all cursor-pointer group",
+                        "bg-gradient-to-br shadow-xl hover:shadow-2xl",
+                        win.type === "points"
+                          ? "from-cyan-600 to-blue-500 border-cyan-400/30"
+                          : win.type === "spin"
+                          ? "from-purple-600 to-pink-500 border-purple-400/30"
+                          : "from-amber-600 to-yellow-500 border-amber-400/30"
+                      )}
                     >
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <p className="text-xs text-muted-foreground font-mono mb-1">{win.date}</p>
-                          <h4 className="font-bold text-foreground flex items-center gap-2">
-                            <Zap className="w-4 h-4 text-warning" />
-                            {win.reward}
-                          </h4>
+                      {/* Animated Background Gradient */}
+                      <motion.div
+                        className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+                      />
+
+                      {/* Corner Accent Glow */}
+                      <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/20 rounded-full blur-3xl group-hover:bg-white/30 transition-all" />
+
+                      {/* Content Container */}
+                      <div className="relative z-10 h-full flex flex-col p-5">
+                        {/* Top Section - Icon */}
+                        <div className="flex items-start justify-between mb-3">
+                          <motion.div
+                            className="text-4xl"
+                            animate={{ scale: [1, 1.15, 1], rotate: [0, 360] }}
+                            transition={{ duration: 3, repeat: Infinity }}
+                          >
+                            {win.type === "points" ? "⚡" : win.type === "spin" ? "🎪" : "🎁"}
+                          </motion.div>
+                          
+                          {/* Points Badge */}
+                          {win.points > 0 && (
+                            <motion.span
+                              initial={{ opacity: 0, scale: 0.8 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/30 text-white backdrop-blur-md border border-white/40 flex items-center gap-1"
+                            >
+                              +{win.points}
+                            </motion.span>
+                          )}
                         </div>
-                        {win.points > 0 && (
-                          <div className="text-right">
-                            <span className="text-sm font-bold text-secondary">+{win.points}</span>
-                            <p className="text-[10px] text-muted-foreground">PTS</p>
-                          </div>
-                        )}
+
+                        {/* Middle Section - Reward Details */}
+                        <div className="flex-1 flex flex-col">
+                          <h4 className="font-bold text-white text-base mb-2 tracking-wide">{win.reward}</h4>
+                          <p className="text-xs text-white/80">
+                            {win.type === "points"
+                              ? "Points reward from spin"
+                              : win.type === "spin"
+                              ? "Bonus spin token"
+                              : "Mystery reward"}
+                          </p>
+                        </div>
+
+                        {/* Bottom Section - Date */}
+                        <div className="flex items-end justify-between pt-2">
+                          <p className="text-[10px] text-white/70 font-mono">Claimed {win.claimedAt}</p>
+                          <motion.div
+                            animate={{ rotate: [0, 360] }}
+                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                            className="text-xs font-bold text-white"
+                          >
+                            🎯
+                          </motion.div>
+                        </div>
                       </div>
                     </motion.div>
                   ))

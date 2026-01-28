@@ -60,41 +60,49 @@ const useCountdown = (initialSeconds) => {
   };
 };
 
-// Individual Card with Countdown - Horizontal Compact Design
+// Individual Card with Countdown - Sleek Google Pay Style Design
 const PendingCard = ({ card, idx, onScratch, styles }) => {
   const initialSeconds = parseExpiryToSeconds(card.expiresIn);
   const countdown = useCountdown(initialSeconds);
   const StatusIcon = styles.icon;
+  const cardDesign = card.cardDesign;
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: idx * 0.1 }}
-      whileHover={{ scale: 1.01 }}
+      whileHover={{ scale: 1.02, y: -5 }}
       whileTap={{ scale: 0.98 }}
       onClick={() => onScratch?.(card.id)}
       className={cn(
-        "relative flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all overflow-hidden",
-        styles.bg,
-        styles.border,
-        styles.glow
+        "relative flex flex-col p-4 rounded-2xl border cursor-pointer transition-all overflow-hidden shadow-lg hover:shadow-xl",
+        "bg-gradient-to-br",
+        cardDesign?.gradient || "from-yellow-600 to-orange-500",
+        "border-white/20"
       )}
     >
       {/* Shimmer Effect */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none"
         animate={{ x: ["-100%", "100%"] }}
         transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 2 }}
       />
 
-      {/* Icon */}
+      {/* Icon - Large and Centered */}
       <motion.div
-        className="relative w-10 h-10 rounded-lg bg-gradient-to-br from-accent/30 to-warning/30 flex items-center justify-center shrink-0"
-        animate={{ rotate: [0, 5, -5, 0] }}
+        className="relative text-5xl mb-2"
+        animate={{ rotate: [0, 5, -5, 0], scale: [1, 1.05, 1] }}
         transition={{ duration: 3, repeat: Infinity, repeatDelay: 4 }}
       >
-        <StatusIcon className={cn("w-5 h-5", styles.iconColor)} />
+        {cardDesign?.icon || "🎁"}
+      </motion.div>
+
+      {/* Card Content */}
+      <div className="relative z-10 flex-1 flex flex-col">
+        <h3 className="font-bold text-white text-sm mb-1">{card.name}</h3>
+        <p className="text-xs text-white/80 mb-2">{cardDesign?.hint || 'Tap to reveal'}</p>
+        
         {/* Urgent indicator dot */}
         {countdown.isUrgent && !countdown.isExpired && (
           <motion.span
@@ -103,40 +111,25 @@ const PendingCard = ({ card, idx, onScratch, styles }) => {
             transition={{ duration: 0.6, repeat: Infinity }}
           />
         )}
-      </motion.div>
-
-      {/* Content */}
-      <div className="flex-1 min-w-0">
-        <p className="text-sm font-semibold text-foreground truncate">???</p>
-        <p className="text-[10px] text-muted-foreground truncate">{card.source}</p>
       </div>
 
-      {/* Real-time Expiry Timer */}
-      <motion.div
-        className={cn(
-          "flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono font-bold shrink-0",
-          countdown.isUrgent 
-            ? "bg-destructive/20 text-destructive" 
-            : "bg-warning/20 text-warning"
+      {/* Date & Timer */}
+      <div className="relative z-10 mt-3 flex items-center justify-between text-xs">
+        <span className="text-white/70 font-mono">{card.date}</span>
+        {card.status === "pending" && (
+          <span className={cn(
+            "font-bold",
+            countdown.isExpired ? "text-red-400" : countdown.isUrgent ? "text-yellow-300" : "text-white/70"
+          )}>
+            {countdown.formatted}
+          </span>
         )}
-        animate={countdown.isUrgent ? { opacity: [1, 0.7, 1] } : {}}
-        transition={{ duration: 1, repeat: Infinity }}
-      >
-        <Clock className="w-3 h-3" />
-        {countdown.formatted}
-      </motion.div>
-
-      {/* Scratch Action */}
-      <motion.div
-        className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center shrink-0"
-        whileHover={{ backgroundColor: "hsl(var(--accent) / 0.4)" }}
-      >
-        <ChevronRight className="w-4 h-4 text-accent" />
-      </motion.div>
+      </div>
     </motion.div>
   );
 };
 
+// Scratched Card Display
 const ScratchCardShowcase = ({ 
   cards = [], 
   onScratchCard,
