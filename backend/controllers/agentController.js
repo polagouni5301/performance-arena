@@ -494,9 +494,9 @@ class AgentController {
       const wheelUnlockedByPoints = tokenBalance >= tokensNeeded;
       const wheelUnlockedByChallenges = allChallengesCompleted;
       
-      // Generate dummy scratch card data for last 5 days
+      // Generate scratch cards data (5 days)
       const today = new Date();
-      const scratchCardsDummy = [
+      const scratchCards = [
         {
           id: 'sc-today',
           date: today.toISOString().split('T')[0],
@@ -505,7 +505,12 @@ class AgentController {
           reward: null,
           expiresIn: '23h 45m',
           points: null,
-          claimedAt: null
+          claimedAt: null,
+          cardDesign: {
+            icon: '📊',
+            gradient: 'from-blue-600 to-cyan-500',
+            hint: 'Performance based reward'
+          }
         },
         {
           id: 'sc-1d',
@@ -515,7 +520,12 @@ class AgentController {
           reward: null,
           expiresIn: '12h 30m',
           points: null,
-          claimedAt: null
+          claimedAt: null,
+          cardDesign: {
+            icon: '⭐',
+            gradient: 'from-yellow-600 to-orange-500',
+            hint: 'Quality achievement reward'
+          }
         },
         {
           id: 'sc-2d',
@@ -525,7 +535,12 @@ class AgentController {
           reward: '+250 PTS',
           expiresIn: null,
           points: 250,
-          claimedAt: new Date(today.getTime() - 2 * 24 * 60 * 60 * 1000).toLocaleDateString()
+          claimedAt: new Date(today.getTime() - 2 * 24 * 60 * 60 * 1000).toLocaleDateString(),
+          cardDesign: {
+            icon: '😊',
+            gradient: 'from-green-600 to-emerald-500',
+            hint: 'Customer satisfaction bonus'
+          }
         },
         {
           id: 'sc-3d',
@@ -535,7 +550,12 @@ class AgentController {
           reward: '+450 PTS',
           expiresIn: null,
           points: 450,
-          claimedAt: new Date(today.getTime() - 3 * 24 * 60 * 60 * 1000).toLocaleDateString()
+          claimedAt: new Date(today.getTime() - 3 * 24 * 60 * 60 * 1000).toLocaleDateString(),
+          cardDesign: {
+            icon: '🎯',
+            gradient: 'from-purple-600 to-pink-500',
+            hint: 'Revenue target achievement'
+          }
         },
         {
           id: 'sc-4d',
@@ -545,20 +565,26 @@ class AgentController {
           reward: null,
           expiresIn: null,
           points: null,
-          claimedAt: null
+          claimedAt: null,
+          cardDesign: {
+            icon: '🔥',
+            gradient: 'from-red-600 to-orange-500',
+            hint: 'Streak bonus'
+          }
         }
       ];
       
       const response = {
         streak: guide.streak || 1,
         totalPoints: Math.round(guide.calculated.points || 0),
+        totalXPS: Math.round(guide.calculated.xp || 0),
         tokenBalance: Math.round(tokenBalance),
         tokensNeeded: tokensNeeded,
         wheelUnlocked: wheelUnlockedByPoints || wheelUnlockedByChallenges,
         countdown: { hours: 4, minutes: 23, seconds: 15 },
         dailyMissions: getDailyMissions(guide),
         weeklyChallenges: getWeeklyChallenges(guide),
-        scratchCards: scratchCardsDummy,
+        scratchCards: scratchCards,
         earningHistory: [
           { id: 'e1', source: 'Daily Mission', amount: 100, time: '2 hours ago', status: 'claimed' },
           { id: 'e2', source: 'Spin Wheel', amount: 250, time: '5 hours ago', status: 'claimed' },
@@ -626,7 +652,7 @@ class AgentController {
       const roleData = roleService.getAgentData(agentId);
       const rewardsCatalog = dataService.getData('rewardsCatalog');
 
-      // Generate scratch cards data (5 days)
+      // Generate scratch cards data (5 days) - with card design details
       const today = new Date();
       const scratchCards = [
         {
@@ -637,7 +663,12 @@ class AgentController {
           reward: null,
           expiresIn: '23h 45m',
           points: null,
-          claimedAt: null
+          claimedAt: null,
+          cardDesign: {
+            icon: '📊',
+            gradient: 'from-blue-600 to-cyan-500',
+            hint: 'Performance based reward'
+          }
         },
         {
           id: 'sc-1d',
@@ -647,7 +678,12 @@ class AgentController {
           reward: null,
           expiresIn: '12h 30m',
           points: null,
-          claimedAt: null
+          claimedAt: null,
+          cardDesign: {
+            icon: '⭐',
+            gradient: 'from-yellow-600 to-orange-500',
+            hint: 'Quality achievement reward'
+          }
         },
         {
           id: 'sc-2d',
@@ -657,7 +693,12 @@ class AgentController {
           reward: '+250 PTS',
           expiresIn: null,
           points: 250,
-          claimedAt: new Date(today.getTime() - 2 * 24 * 60 * 60 * 1000).toLocaleDateString()
+          claimedAt: new Date(today.getTime() - 2 * 24 * 60 * 60 * 1000).toLocaleDateString(),
+          cardDesign: {
+            icon: '😊',
+            gradient: 'from-green-600 to-emerald-500',
+            hint: 'Customer satisfaction bonus'
+          }
         },
         {
           id: 'sc-3d',
@@ -667,7 +708,12 @@ class AgentController {
           reward: '+450 PTS',
           expiresIn: null,
           points: 450,
-          claimedAt: new Date(today.getTime() - 3 * 24 * 60 * 60 * 1000).toLocaleDateString()
+          claimedAt: new Date(today.getTime() - 3 * 24 * 60 * 60 * 1000).toLocaleDateString(),
+          cardDesign: {
+            icon: '🎯',
+            gradient: 'from-purple-600 to-pink-500',
+            hint: 'Revenue target achievement'
+          }
         },
         {
           id: 'sc-4d',
@@ -677,7 +723,12 @@ class AgentController {
           reward: null,
           expiresIn: null,
           points: null,
-          claimedAt: null
+          claimedAt: null,
+          cardDesign: {
+            icon: '🔥',
+            gradient: 'from-red-600 to-orange-500',
+            hint: 'Streak bonus'
+          }
         }
       ];
 

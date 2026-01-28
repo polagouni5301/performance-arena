@@ -133,6 +133,13 @@ const PlayZone = () => {
 
   const handleAcceptChallenge = useCallback((challengeId) => {
     console.log("Challenge accepted:", challengeId);
+    // This now gets called by WeeklyChallenges component when user clicks Accept
+  }, []);
+
+  const handleAcceptAllChallenges = useCallback(() => {
+    // Accept all challenges at once
+    console.log("All challenges accepted");
+    // This will trigger the challenge acceptance flow in WeeklyChallenges component
   }, []);
 
   const handleClaimChallengeReward = useCallback((challengeId, tokens) => {
@@ -145,6 +152,7 @@ const PlayZone = () => {
 
   const activeStreak = data?.streak || 7;
   const totalPoints = data?.totalPoints || 12450;
+  const totalXPS = data?.totalXPS || 8500;
   const scratchReward = data?.scratchReward || "+500 PTS";
   const tokensNeeded = data?.tokensNeeded || 250; // Updated to 250 points for spin wheel unlock
   const weeklyChallenges = data?.weeklyChallenges || [];
@@ -239,6 +247,12 @@ const PlayZone = () => {
             <Star className="w-4 h-4 text-accent" />
               <span className="font-display text-lg text-accent">{Math.round(totalPoints).toLocaleString()}</span>
             </div>
+
+            <div className="arena-panel px-3 py-1.5 flex items-center gap-1.5 border border-primary/40">
+            <Zap className="w-4 h-4 text-primary" />
+              <span className="font-display text-lg text-primary">{Math.round(totalXPS).toLocaleString()}</span>
+              <span className="text-[8px] text-primary/70 uppercase">XPS</span>
+            </div>
           </div>
         </motion.header>
 
@@ -257,6 +271,7 @@ const PlayZone = () => {
             nextSpinIn={wheelUnlocked ? `${formatTime(countdown.hours)}:${formatTime(countdown.minutes)}` : null}
             onOpenWheel={handleOpenWheel}
             onViewChallenges={() => document.querySelector('[data-scroll-to="challenges"]')?.scrollIntoView({ behavior: 'smooth' })}
+            onAcceptAllChallenges={handleAcceptAllChallenges}
           />
         </motion.section>
 

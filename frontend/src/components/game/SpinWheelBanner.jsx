@@ -23,6 +23,7 @@ const SpinWheelBanner = ({
   nextSpinIn = null,
   onOpenWheel,
   onViewChallenges,
+  onAcceptAllChallenges, // New callback for accepting all challenges
 }) => {
   const progress = Math.min((pointsEarned / pointsNeeded) * 100, 100);
   const canUnlock = pointsEarned >= pointsNeeded;
@@ -167,7 +168,7 @@ const SpinWheelBanner = ({
           <div className="flex items-center gap-3">
             {!isUnlocked && (
               <button
-                onClick={onViewChallenges}
+                onClick={onAcceptAllChallenges || onViewChallenges}
                 className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-primary hover:bg-primary/10 transition-all border border-primary/30 hover:border-primary/50"
               >
                 <Trophy className="w-4 h-4" />

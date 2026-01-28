@@ -648,28 +648,36 @@ const RewardsAndAchievements = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: idx * 0.05 }}
                       className={cn(
-                        "relative p-4 rounded-xl border overflow-hidden transition-all hover:scale-102",
+                        "relative p-4 rounded-xl border overflow-hidden transition-all hover:scale-105 cursor-pointer group",
                         card.status === "pending"
-                          ? "bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-yellow-500/30"
+                          ? "bg-gradient-to-br from-yellow-500/15 via-yellow-500/10 to-amber-500/15 border-yellow-500/40 shadow-lg shadow-yellow-500/10"
                           : card.status === "scratched"
-                          ? "bg-gradient-to-r from-success/10 to-emerald-500/10 border-success/30"
-                          : "bg-muted/20 border-border/30 opacity-60"
+                          ? "bg-gradient-to-br from-success/15 via-emerald-500/10 to-teal-500/15 border-success/40 shadow-lg shadow-success/10"
+                          : "bg-gradient-to-br from-muted/20 to-muted/10 border-border/30 opacity-50"
                       )}
                     >
+                      {/* Card Design Background */}
+                      {card.cardDesign && (
+                        <div className="absolute top-2 right-2 text-3xl opacity-20 group-hover:opacity-30 transition-opacity">
+                          {card.cardDesign.icon}
+                        </div>
+                      )}
+
                       {/* Status Badge */}
                       <div className="absolute top-3 right-3 flex items-center gap-1">
                         {card.status === "pending" && (
-                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-400">
+                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-yellow-500/30 text-yellow-300 backdrop-blur-sm">
                             {card.expiresIn}
                           </span>
                         )}
                         {card.status === "scratched" && (
-                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-success/20 text-success">
+                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-success/40 text-emerald-200 backdrop-blur-sm flex items-center gap-1">
+                            <Check className="w-3 h-3" />
                             +{card.points} PTS
                           </span>
                         )}
                         {card.status === "expired" && (
-                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-destructive/20 text-destructive">
+                          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-destructive/30 text-red-200 backdrop-blur-sm">
                             EXPIRED
                           </span>
                         )}
@@ -677,18 +685,30 @@ const RewardsAndAchievements = () => {
 
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
-                          <p className="text-xs text-muted-foreground font-mono mb-1">{card.date}</p>
-                          <h4 className="font-bold text-foreground">{card.name}</h4>
+                          <p className="text-xs text-muted-foreground/70 font-mono mb-1 tracking-widest">{card.date}</p>
+                          <h4 className="font-bold text-foreground text-sm mb-2">{card.name}</h4>
+                          {card.cardDesign?.hint && (
+                            <p className="text-xs text-muted-foreground/60 italic">{card.cardDesign.hint}</p>
+                          )}
                         </div>
                         {card.status === "scratched" && (
-                          <Check className="w-5 h-5 text-success ml-2" />
+                          <Check className="w-5 h-5 text-success ml-2 shrink-0" />
                         )}
                       </div>
 
                       {card.status === "scratched" && (
-                        <p className="text-xs text-muted-foreground mt-2 font-mono">
-                          Claimed {card.claimedAt}
+                        <p className="text-xs text-muted-foreground/60 mt-2 font-mono">
+                          Claimed on {card.claimedAt}
                         </p>
+                      )}
+
+                      {card.status === "pending" && (
+                        <div className="mt-3 flex items-center justify-between">
+                          <span className="text-xs text-yellow-300/80 font-mono">TAP TO REVEAL</span>
+                          <motion.div animate={{ x: [0, 3, 0] }} transition={{ duration: 2, repeat: Infinity }}>
+                            <ChevronRight className="w-4 h-4 text-yellow-400/60" />
+                          </motion.div>
+                        </div>
                       )}
                     </motion.div>
                   ))
