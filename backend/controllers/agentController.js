@@ -119,6 +119,67 @@ function getBadges(streak, score) {
   return badges;
 }
 
+function getWeeklyChallenges(guide) {
+  if (!guide) return [];
+  return [
+    {
+      id: 1,
+      title: 'Maintain QA Score',
+      description: 'Keep QA score above 85%',
+      points: 20,
+      progress: Math.min((guide.metrics.qa / 85) * 100, 100),
+      completed: guide.metrics.qa >= 85,
+      reward: 20
+    },
+    {
+      id: 2,
+      title: 'NRPC Target',
+      description: 'Achieve NRPC of 30+',
+      points: 30,
+      progress: Math.min((guide.metrics.nrpc / 30) * 100, 100),
+      completed: guide.metrics.nrpc >= 30,
+      reward: 30
+    },
+    {
+      id: 3,
+      title: 'NPS Excellence',
+      description: 'Reach NPS score of 50+',
+      points: 20,
+      progress: Math.min((guide.metrics.nps / 50) * 100, 100),
+      completed: guide.metrics.nps >= 50,
+      reward: 20
+    },
+    {
+      id: 4,
+      title: 'Handle Time Target',
+      description: 'Maintain AHT below 23 mins',
+      points: 20,
+      progress: Math.min((23 / guide.metrics.aht) * 100, 100),
+      completed: guide.metrics.aht <= 23,
+      reward: 20
+    },
+    {
+      id: 5,
+      title: 'Revenue Goal',
+      description: 'Generate $500+ revenue',
+      points: 10,
+      progress: Math.min((guide.metrics.revenue / 500) * 100, 100),
+      completed: guide.metrics.revenue >= 500,
+      reward: 10
+    }
+  ];
+}
+
+function getLevelTiers() {
+  return [
+    { level: 1, name: 'Beginner', minXP: 0, maxXP: 999, color: '#94a3b8' },
+    { level: 2, name: 'Intermediate', minXP: 1000, maxXP: 4999, color: '#3b82f6' },
+    { level: 3, name: 'Expert', minXP: 5000, maxXP: 14999, color: '#10b981' },
+    { level: 4, name: 'Elite', minXP: 15000, maxXP: 49999, color: '#f59e0b' },
+    { level: 5, name: 'Master', minXP: 50000, maxXP: Infinity, color: '#ef4444' }
+  ];
+}
+
 class AgentController {
   // GET /api/agent/{agentId}/dashboard
   async getDashboard(req, res) {
