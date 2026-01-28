@@ -592,18 +592,49 @@ const RewardsAndAchievements = () => {
           </div>
         </div>
 
-        {/* Toggle between Scratch Cards and Spin Wins */}
+        {/* Vault Rank Progress - Inside Collected Rewards */}
+        <motion.section
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35 }}
+          className="arena-panel p-4 mb-4"
+        >
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center gap-2">
+              <Crown className="w-5 h-5 text-accent" />
+              <span className="text-xs text-muted-foreground font-oxanium tracking-wider">
+                VAULT RANK: <span className="text-accent font-bold">Level {rewardsData?.userRank || 1}</span>
+              </span>
+            </div>
+            <span className="text-xs text-secondary font-mono">
+              {(rewardsData?.userBalance || 0).toLocaleString()} / {(rewardsData?.nextRankPoints || 100).toLocaleString()} CR
+            </span>
+          </div>
+          <div className="energy-meter h-2">
+            <motion.div 
+              className="energy-meter-fill"
+              initial={{ width: 0 }}
+              animate={{ width: `${((rewardsData?.userBalance || 0) / (rewardsData?.nextRankPoints || 100)) * 100}%` }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+            />
+          </div>
+          <p className="text-[10px] text-muted-foreground mt-2 font-mono">
+            {(((rewardsData?.nextRankPoints || 100) - (rewardsData?.userBalance || 0))).toLocaleString()} CR → Level {(rewardsData?.userRank || 1) + 1}
+          </p>
+        </motion.section>
+
+        {/* Toggle between Scratch Cards, Spin Wins, and Catalog */}
         <motion.section
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.42 }}
           className="space-y-4"
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <button
               onClick={() => setRelicsType("scratch")}
               className={cn(
-                "flex-1 px-4 py-2.5 rounded-lg font-semibold text-sm transition-all border",
+                "px-4 py-2.5 rounded-lg font-semibold text-sm transition-all border",
                 relicsType === "scratch"
                   ? "bg-secondary/20 border-secondary/50 text-secondary shadow-lg"
                   : "bg-muted/20 border-border/50 text-muted-foreground hover:text-foreground"
@@ -617,7 +648,7 @@ const RewardsAndAchievements = () => {
             <button
               onClick={() => setRelicsType("wheel")}
               className={cn(
-                "flex-1 px-4 py-2.5 rounded-lg font-semibold text-sm transition-all border",
+                "px-4 py-2.5 rounded-lg font-semibold text-sm transition-all border",
                 relicsType === "wheel"
                   ? "bg-primary/20 border-primary/50 text-primary shadow-lg"
                   : "bg-muted/20 border-border/50 text-muted-foreground hover:text-foreground"
@@ -626,6 +657,20 @@ const RewardsAndAchievements = () => {
               <div className="flex items-center justify-center gap-2">
                 <Target className="w-4 h-4" />
                 WHEEL WINS
+              </div>
+            </button>
+            <button
+              onClick={() => setRelicsType("catalog")}
+              className={cn(
+                "px-4 py-2.5 rounded-lg font-semibold text-sm transition-all border",
+                relicsType === "catalog"
+                  ? "bg-accent/20 border-accent/50 text-accent shadow-lg"
+                  : "bg-muted/20 border-border/50 text-muted-foreground hover:text-foreground"
+              )}
+            >
+              <div className="flex items-center justify-center gap-2">
+                <Box className="w-4 h-4" />
+                REWARDS CATALOG
               </div>
             </button>
           </div>
@@ -748,7 +793,7 @@ const RewardsAndAchievements = () => {
             {relicsType === "wheel" && (
               <>
                 {/* Spin Wheel Wins Display - Sleek Card Grid */}
-                <div className="text-xs text-muted-foreground text-center py-3 font-semibold">Last 30 days - Spin Wins</div>
+                <div className="text-xs text-muted-foreground text-center py-3 font-semibold col-span-full">Last 30 days - Spin Wins</div>
                 {(rewardsData?.spinWins || []).length === 0 ? (
                   <div className="col-span-full text-center py-12">
                     <Target className="w-16 h-16 mx-auto text-muted-foreground/40 mb-4" />
@@ -833,239 +878,120 @@ const RewardsAndAchievements = () => {
                 )}
               </>
             )}
-          </div>
-        </motion.section>
 
-        {/* Vault Rank Progress */}
-        <motion.section
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="arena-panel p-4"
-        >
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex items-center gap-2">
-              <Crown className="w-5 h-5 text-accent" />
-              <span className="text-xs text-muted-foreground font-oxanium tracking-wider">
-                VAULT RANK: <span className="text-accent font-bold">{rewardsData.userRank}</span>
-              </span>
-            </div>
-            <span className="text-xs text-secondary font-mono">
-              {rewardsData.userBalance.toLocaleString()} / {rewardsData.nextRankPoints.toLocaleString()} CR
-            </span>
-          </div>
-          <div className="energy-meter h-2">
-            <motion.div 
-              className="energy-meter-fill"
-              initial={{ width: 0 }}
-              animate={{ width: `${(rewardsData.userBalance / rewardsData.nextRankPoints) * 100}%` }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-            />
-          </div>
-          <p className="text-[10px] text-muted-foreground mt-2 font-mono">
-            {(rewardsData.nextRankPoints - rewardsData.userBalance).toLocaleString()} CR → {rewardsData.nextRank}
-          </p>
-        </motion.section>
-
-        {/* Categories */}
-        <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setActiveCategory(cat.id)}
-              className={cn(
-                "flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-oxanium tracking-wider transition-all border",
-                activeCategory === cat.id
-                  ? "bg-primary/20 text-primary border-primary/40 shadow-[0_0_15px_hsla(320,100%,55%,0.2)]"
-                  : "bg-muted/20 text-muted-foreground border-border/50 hover:border-primary/30 hover:text-foreground"
-              )}
-            >
-              <cat.icon className="w-4 h-4" />
-              {cat.label.toUpperCase()}
-            </button>
-          ))}
-        </div>
-
-        {/* Swipeable Loot Cards - Mobile */}
-        <div className="lg:hidden relative">
-          <div className="flex items-center justify-between mb-3">
-            <h3 className="font-oxanium text-sm font-bold text-foreground tracking-wider">AVAILABLE LOOT</h3>
-            <div className="flex items-center gap-2">
-              <button 
-                onClick={() => scrollCarousel('prev')}
-                className="p-2 rounded-lg bg-muted/30 border border-border/50 hover:border-primary/30 transition-colors"
-              >
-                <ChevronLeft className="w-4 h-4 text-muted-foreground" />
-              </button>
-              <button 
-                onClick={() => scrollCarousel('next')}
-                className="p-2 rounded-lg bg-muted/30 border border-border/50 hover:border-primary/30 transition-colors"
-              >
-                <ChevronRight className="w-4 h-4 text-muted-foreground" />
-              </button>
-            </div>
-          </div>
-
-          <div 
-            ref={carouselRef}
-            className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
-            {filteredRewards.map((reward, index) => {
-              const rarity = rarityConfig[reward.rarity] || rarityConfig.common;
-              
-              return (
-                <motion.div 
-                  key={reward.id}
-                  className={cn(
-                    "flex-shrink-0 w-64 snap-center arena-panel overflow-hidden",
-                    rarity.border,
-                    reward.status === "locked" && "opacity-60"
-                  )}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {/* Rarity Bar */}
-                  <div className={cn("h-1 w-full bg-gradient-to-r", rarity.gradient)} />
-
-                  <div className="p-4">
-                    {/* Rarity Label */}
-                    <div className="flex items-center justify-between mb-3">
-                      <span className={cn("text-[9px] font-oxanium tracking-widest", rarity.labelColor)}>
-                        {rarity.label}
-                      </span>
-                      <button 
-                        onClick={() => toggleWishlist(reward.id)}
-                        className="p-1.5 rounded bg-background/80 border border-border/50"
+            {relicsType === "catalog" && (
+              <>
+                {/* Rewards Catalog - Category filtered */}
+                <div className="col-span-full">
+                  {/* Category Filters */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {categories.map((cat) => (
+                      <button
+                        key={cat.id}
+                        onClick={() => setActiveCategory(cat.id)}
+                        className={cn(
+                          "flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-oxanium tracking-wider transition-all border",
+                          activeCategory === cat.id
+                            ? "bg-primary/20 text-primary border-primary/40 shadow-[0_0_15px_hsla(320,100%,55%,0.2)]"
+                            : "bg-muted/20 text-muted-foreground border-border/50 hover:border-primary/30 hover:text-foreground"
+                        )}
                       >
-                        <Heart className={cn(
-                          "w-3 h-3 transition-colors",
-                          wishlist.includes(reward.id) ? "text-pink-500 fill-pink-500" : "text-muted-foreground"
-                        )} />
+                        <cat.icon className="w-4 h-4" />
+                        {cat.label.toUpperCase()}
                       </button>
-                    </div>
-
-                    {/* Reward Image */}
-                    <div className={cn(
-                      "flex items-center justify-center w-16 h-16 mx-auto mb-3 rounded-xl bg-gradient-to-br from-muted/50 to-muted/20 text-4xl",
-                      rarity.glow
-                    )}>
-                      {reward.image}
-                    </div>
-
-                    {/* Title & Description */}
-                    <h4 className="font-oxanium font-bold text-foreground text-center text-sm mb-1 tracking-wide">{reward.title}</h4>
-                    <p className="text-[10px] text-muted-foreground text-center mb-3 line-clamp-2 font-mono">{reward.description}</p>
-
-                    {/* Price & Action */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-1">
-                        <Star className="w-4 h-4 text-accent" />
-                        <span className="font-display font-bold text-accent">{reward.points ? reward.points.toLocaleString() : '0'}</span>
-                      </div>
-
-                      {reward.status === "locked" ? (
-                        <div className="flex items-center gap-1 text-muted-foreground text-[10px] font-mono">
-                          <Lock className="w-3 h-3" />
-                          <span>{reward.requiredRank}</span>
-                        </div>
-                      ) : (
-                        <button className={cn(
-                          "px-3 py-1.5 rounded-lg text-[10px] font-oxanium tracking-wider border transition-colors",
-                          reward.status === "limited"
-                            ? "bg-warning/20 text-warning border-warning/30 hover:bg-warning/30"
-                            : "bg-primary/20 text-primary border-primary/30 hover:bg-primary/30"
-                        )}>
-                          {reward.status === "limited" ? `${reward.stock} LEFT` : "CLAIM"}
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Desktop Grid */}
-        <div className="hidden lg:grid lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {filteredRewards.map((reward, index) => {
-            const rarity = rarityConfig[reward.rarity] || rarityConfig.common;
-            
-            return (
-              <motion.div 
-                key={reward.id}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.45 + index * 0.05 }}
-                whileHover={{ scale: 1.03, y: -5 }}
-                className={cn(
-                  "arena-panel overflow-hidden cursor-pointer transition-all",
-                  rarity.border,
-                  reward.status === "locked" && "opacity-60 hover:opacity-80"
-                )}
-              >
-                {/* Rarity Bar */}
-                <div className={cn("h-1 w-full bg-gradient-to-r", rarity.gradient)} />
-
-                {/* Wishlist Button */}
-                <button 
-                  onClick={() => toggleWishlist(reward.id)}
-                  className="absolute top-3 right-3 z-10 p-1.5 rounded-lg bg-background/80 border border-border/50 hover:border-primary/40 transition-colors"
-                >
-                  <Heart className={cn(
-                    "w-3 h-3 transition-colors",
-                    wishlist.includes(reward.id) ? "text-pink-500 fill-pink-500" : "text-muted-foreground"
-                  )} />
-                </button>
-
-                <div className="p-4">
-                  {/* Rarity Label */}
-                  <div className="flex justify-center mb-3">
-                    <span className={cn("text-[9px] font-oxanium tracking-widest", rarity.labelColor)}>
-                      {rarity.label}
-                    </span>
-                  </div>
-
-                  {/* Reward Image */}
-                  <div className={cn(
-                    "flex items-center justify-center w-14 h-14 mx-auto mb-3 rounded-xl bg-gradient-to-br from-muted/50 to-muted/20 text-3xl transition-all",
-                    rarity.glow
-                  )}>
-                    {reward.image}
-                  </div>
-
-                  {/* Title & Description */}
-                  <h4 className="font-oxanium font-bold text-foreground text-center text-sm mb-1 tracking-wide">{reward.title}</h4>
-                  <p className="text-[10px] text-muted-foreground text-center mb-3 line-clamp-2 font-mono">{reward.description}</p>
-
-                  {/* Price & Action */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 text-accent" />
-                      <span className="font-display font-bold text-accent">{reward.points ? reward.points.toLocaleString() : '0'}</span>
-                    </div>
-
-                    {reward.status === "locked" ? (
-                      <div className="flex items-center gap-1 text-muted-foreground text-[10px] font-mono">
-                        <Lock className="w-3 h-3" />
-                        <span>{reward.requiredRank}</span>
-                      </div>
-                    ) : (
-                      <button className={cn(
-                        "px-3 py-1.5 rounded-lg text-[10px] font-oxanium tracking-wider border transition-colors",
-                        reward.status === "limited"
-                          ? "bg-warning/20 text-warning border-warning/30 hover:bg-warning/30"
-                          : "bg-primary/20 text-primary border-primary/30 hover:bg-primary/30"
-                      )}>
-                        {reward.status === "limited" ? `${reward.stock} LEFT` : "CLAIM"}
-                      </button>
-                    )}
+                    ))}
                   </div>
                 </div>
-              </motion.div>
-            );
-          })}
-        </div>
+
+                {/* Reward Cards Grid */}
+                {filteredRewards.length === 0 ? (
+                  <div className="col-span-full text-center py-12">
+                    <Box className="w-16 h-16 mx-auto text-muted-foreground/40 mb-4" />
+                    <p className="text-sm text-muted-foreground">No rewards in this category</p>
+                  </div>
+                ) : (
+                  filteredRewards.map((reward, index) => {
+                    const rarity = rarityConfig[reward.rarity] || rarityConfig.common;
+                    
+                    return (
+                      <motion.div 
+                        key={reward.id}
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.45 + index * 0.05 }}
+                        whileHover={{ scale: 1.03, y: -5 }}
+                        className={cn(
+                          "arena-panel overflow-hidden cursor-pointer transition-all",
+                          rarity.border,
+                          reward.status === "locked" && "opacity-60 hover:opacity-80"
+                        )}
+                      >
+                        {/* Rarity Bar */}
+                        <div className={cn("h-1 w-full bg-gradient-to-r", rarity.gradient)} />
+
+                        {/* Wishlist Button */}
+                        <button 
+                          onClick={() => toggleWishlist(reward.id)}
+                          className="absolute top-3 right-3 z-10 p-1.5 rounded-lg bg-background/80 border border-border/50 hover:border-primary/40 transition-colors"
+                        >
+                          <Heart className={cn(
+                            "w-3 h-3 transition-colors",
+                            wishlist.includes(reward.id) ? "text-pink-500 fill-pink-500" : "text-muted-foreground"
+                          )} />
+                        </button>
+
+                        <div className="p-4">
+                          {/* Rarity Label */}
+                          <div className="flex justify-center mb-3">
+                            <span className={cn("text-[9px] font-oxanium tracking-widest", rarity.labelColor)}>
+                              {rarity.label}
+                            </span>
+                          </div>
+
+                          {/* Reward Image */}
+                          <div className={cn(
+                            "flex items-center justify-center w-14 h-14 mx-auto mb-3 rounded-xl bg-gradient-to-br from-muted/50 to-muted/20 text-3xl transition-all",
+                            rarity.glow
+                          )}>
+                            {reward.image}
+                          </div>
+
+                          {/* Title & Description */}
+                          <h4 className="font-oxanium font-bold text-foreground text-center text-sm mb-1 tracking-wide">{reward.title}</h4>
+                          <p className="text-[10px] text-muted-foreground text-center mb-3 line-clamp-2 font-mono">{reward.description}</p>
+
+                          {/* Price & Action */}
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-1">
+                              <Star className="w-4 h-4 text-accent" />
+                              <span className="font-display font-bold text-accent">{reward.points ? reward.points.toLocaleString() : '0'}</span>
+                            </div>
+
+                            {reward.status === "locked" ? (
+                              <div className="flex items-center gap-1 text-muted-foreground text-[10px] font-mono">
+                                <Lock className="w-3 h-3" />
+                                <span>{reward.requiredRank}</span>
+                              </div>
+                            ) : (
+                              <button className={cn(
+                                "px-3 py-1.5 rounded-lg text-[10px] font-oxanium tracking-wider border transition-colors",
+                                reward.status === "limited"
+                                  ? "bg-warning/20 text-warning border-warning/30 hover:bg-warning/30"
+                                  : "bg-primary/20 text-primary border-primary/30 hover:bg-primary/30"
+                              )}>
+                                {reward.status === "limited" ? `${reward.stock} LEFT` : "CLAIM"}
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      </motion.div>
+                    );
+                  })
+                )}
+              </>
+            )}
+          </div>
+        </motion.section>
 
         {/* PERFORMANCE REVIEW Section - Line Graph */}
         <motion.section
