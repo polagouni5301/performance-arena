@@ -28,6 +28,7 @@ import WeeklyChallenges from "../../components/game/WeeklyChallenges";
 import ScratchCardShowcase from "../../components/game/ScratchCardShowcase";
 import { usePlayzone } from "./hooks.jsx";
 import { PlayzoneSkeleton } from "@/components/ui/PageSkeleton";
+import ScratchRewardsPanel from "../../components/game/ScratchRewardsPanel";
 
 const PlayZone = () => {
   const { data, loading, actions, refetch } = usePlayzone();
@@ -305,12 +306,10 @@ const PlayZone = () => {
             className="xl:col-span-1"
           >
             <div className="arena-panel p-4 border border-accent/20 h-full">
-              <ScratchCardShowcase
-                cards={scratchCards}
-                meetsThreshold={todaysPerformance.meetsThreshold}
-                todaysMetric={todaysPerformance.metric}
-                onScratchCard={setActiveScratchCard}
-              />
+             <ScratchRewardsPanel
+  cards={scratchCards}
+  onScratch={setActiveScratchCard}
+/>
             </div>
           </motion.div>
         </div>
