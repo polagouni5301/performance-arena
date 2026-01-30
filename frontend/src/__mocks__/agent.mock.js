@@ -108,8 +108,8 @@ export const agentLeaderboardMock = {
     { name: "Master", minXP: 1500, color: "from-amber-400 to-orange-500", icon: "👑" },
     { name: "Elite", minXP: 1200, color: "from-purple-500 to-pink-500", icon: "💎" },
     { name: "Expert", minXP: 900, color: "from-cyan-400 to-blue-500", icon: "⚡" },
-    { name: "Intermediate", minXP: 500, color: "from-emerald-400 to-green-500", icon: "🌟" },
-    { name: "Beginner", minXP: 0, color: "from-gray-400 to-slate-500", icon: "🔰" },
+    { name: "Diamond", minXP: 500, color: "from-emerald-400 to-green-500", icon: "🌟" },
+    { name: "Elite Master", minXP: 0, color: "from-gray-400 to-slate-500", icon: "🔰" },
   ],
   weeklyRewards: {
     top3: { points: 500, scratchCards: 3 },

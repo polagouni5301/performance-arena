@@ -86,8 +86,8 @@ const Leaderboard = () => {
     { name: "Master", minXP: 1500, color: "from-amber-400 to-orange-500", glow: "shadow-[0_0_30px_hsla(45,100%,50%,0.4)]", icon: "👑" },
     { name: "Elite", minXP: 1200, color: "from-primary to-pink-500", glow: "shadow-[0_0_25px_hsla(320,100%,55%,0.4)]", icon: "💎" },
     { name: "Expert", minXP: 900, color: "from-secondary to-blue-500", glow: "shadow-[0_0_20px_hsla(195,100%,50%,0.3)]", icon: "⚡" },
-    { name: "Intermediate", minXP: 500, color: "from-emerald-400 to-green-500", glow: "shadow-[0_0_15px_hsla(160,100%,40%,0.3)]", icon: "🌟" },
-    { name: "Beginner", minXP: 0, color: "from-slate-400 to-slate-600", glow: "", icon: "🔰" },
+    { name: "Diamond", minXP: 500, color: "from-emerald-400 to-green-500", glow: "shadow-[0_0_15px_hsla(160,100%,40%,0.3)]", icon: "🌟" },
+    { name: "Super Elite", minXP: 0, color: "from-slate-400 to-slate-600", glow: "", icon: "🔰" },
   ];
 
   const weeklyRewards = data.weeklyRewards || {

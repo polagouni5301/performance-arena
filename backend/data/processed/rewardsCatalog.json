@@ -1,6 +1,74 @@
 [
   {
     "reward_id": "reward_1",
+    "name": "Messaging - Email Support Excellence Reward",
+    "description": "Reward for outstanding performance in Messaging - Email Support",
+    "category": "Department",
+    "point_cost": 100,
+    "stock": "Unlimited",
+    "status": "Active",
+    "icon": "trophy",
+    "image": "",
+    "eligibility": {
+      "minRank": "Bronze",
+      "departments": [
+        "Messaging - Email Support"
+      ]
+    }
+  },
+  {
+    "reward_id": "reward_2",
+    "name": "Messaging - Hosting Excellence Reward",
+    "description": "Reward for outstanding performance in Messaging - Hosting",
+    "category": "Department",
+    "point_cost": 100,
+    "stock": "Unlimited",
+    "status": "Active",
+    "icon": "trophy",
+    "image": "",
+    "eligibility": {
+      "minRank": "Bronze",
+      "departments": [
+        "Messaging - Hosting"
+      ]
+    }
+  },
+  {
+    "reward_id": "reward_3",
+    "name": "Messaging - Account Support Excellence Reward",
+    "description": "Reward for outstanding performance in Messaging - Account Support",
+    "category": "Department",
+    "point_cost": 100,
+    "stock": "Unlimited",
+    "status": "Active",
+    "icon": "trophy",
+    "image": "",
+    "eligibility": {
+      "minRank": "Bronze",
+      "departments": [
+        "Messaging - Account Support"
+      ]
+    }
+  },
+  {
+    "reward_id": "reward_4",
+    "name": "Messaging - General Excellence Reward",
+    "description": "Reward for outstanding performance in Messaging - General",
+    "category": "Department",
+    "point_cost": 100,
+    "stock": "Unlimited",
+    "status": "Active",
+    "icon": "trophy",
+    "image": "",
+    "eligibility": {
+      "minRank": "Bronze",
+      "departments": [
+        "Messaging - General"
+      ]
+    }
+  },
+  {
+    "reward_id": "reward_5",
     "name": "Messaging - Sales Excellence Reward",
     "description": "Reward for outstanding performance in Messaging - Sales",
     "category": "Department",
@@ -13,74 +81,6 @@
       "minRank": "Bronze",
       "departments": [
         "Messaging - Sales"
-      ]
-    }
-  },
-  {
-    "reward_id": "reward_2",
-    "name": "Hosting Support Web Pro Excellence Reward",
-    "description": "Reward for outstanding performance in Hosting Support Web Pro",
-    "category": "Department",
-    "point_cost": 100,
-    "stock": "Unlimited",
-    "status": "Active",
-    "icon": "trophy",
-    "image": "",
-    "eligibility": {
-      "minRank": "Bronze",
-      "departments": [
-        "Hosting Support Web Pro"
-      ]
-    }
-  },
-  {
-    "reward_id": "reward_3",
-    "name": "Reseller Support Excellence Reward",
-    "description": "Reward for outstanding performance in Reseller Support",
-    "category": "Department",
-    "point_cost": 100,
-    "stock": "Unlimited",
-    "status": "Active",
-    "icon": "trophy",
-    "image": "",
-    "eligibility": {
-      "minRank": "Bronze",
-      "departments": [
-        "Reseller Support"
-      ]
-    }
-  },
-  {
-    "reward_id": "reward_4",
-    "name": "Website Security Support Excellence Reward",
-    "description": "Reward for outstanding performance in Website Security Support",
-    "category": "Department",
-    "point_cost": 100,
-    "stock": "Unlimited",
-    "status": "Active",
-    "icon": "trophy",
-    "image": "",
-    "eligibility": {
-      "minRank": "Bronze",
-      "departments": [
-        "Website Security Support"
-      ]
-    }
-  },
-  {
-    "reward_id": "reward_5",
-    "name": "C3 Support Excellence Reward",
-    "description": "Reward for outstanding performance in C3 Support",
-    "category": "Department",
-    "point_cost": 100,
-    "stock": "Unlimited",
-    "status": "Active",
-    "icon": "trophy",
-    "image": "",
-    "eligibility": {
-      "minRank": "Bronze",
-      "departments": [
-        "C3 Support"
       ]
     }
   }

@@ -573,7 +573,7 @@ const Performance = () => {
                     <Activity className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="text-lg font-bold text-foreground" style={{ fontFamily: "'Sora', sans-serif" }}>
-                    Points Activity Log
+                    KPI Metrics Activity Log
                   </h3>
                 </div>
                 <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/30 border border-border/50">

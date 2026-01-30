@@ -82,8 +82,8 @@ class LeadershipController {
           { name: "Master", minXP: 1500, color: "from-amber-400 to-orange-500", icon: "👑" },
           { name: "Elite", minXP: 1200, color: "from-primary to-pink-500", icon: "💎" },
           { name: "Expert", minXP: 900, color: "from-secondary to-blue-500", icon: "⚡" },
-          { name: "Intermediate", minXP: 500, color: "from-emerald-400 to-green-500", icon: "🌟" },
-          { name: "Beginner", minXP: 0, color: "from-slate-400 to-slate-600", icon: "🔰" }
+          { name: "Diamond", minXP: 500, color: "from-emerald-400 to-green-500", icon: "🌟" },
+          { name: "Elite Master", minXP: 0, color: "from-slate-400 to-slate-600", icon: "🔰" }
         ],
         weeklyRewards: {
           top3: { points: 500, scratchCards: 3, xp: 100, badge: "Weekly Champion" },
@@ -112,7 +112,7 @@ class LeadershipController {
           region: "North",
           points: guide.calculated.points,
           xp: guide.calculated.xp,
-          level: guide.calculated.xp > 1500 ? "Master" : guide.calculated.xp > 1200 ? "Elite" : guide.calculated.xp > 900 ? "Expert" : guide.calculated.xp > 500 ? "Intermediate" : "Beginner",
+          level: guide.calculated.xp > 1500 ? "Master" : guide.calculated.xp > 1200 ? "Elite" : guide.calculated.xp > 900 ? "Expert" : guide.calculated.xp > 500 ? "Diamond" : "Elite Master",
           revenue: `$${(guide.metrics.revenue || 0).toFixed(0)}`,
           nps: guide.metrics.nps || 0,
           aht: guide.metrics.aht || 0,

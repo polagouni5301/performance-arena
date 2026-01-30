@@ -241,25 +241,11 @@ const Landing = () => {
                   <span>START PLAYING</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
-
-                <motion.button
-                  whileHover={{ scale: 1.02, borderColor: "hsl(var(--primary))" }}
-                  whileTap={{ scale: 0.98 }}
-                  className="flex items-center justify-center gap-3 px-6 py-3.5 sm:py-4 rounded-xl border-2 border-border text-foreground font-semibold hover:bg-primary/10 transition-all"
-                >
-                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                    <Play className="w-4 h-4 text-primary ml-0.5" fill="currentColor" />
-                  </div>
-                  <span>WATCH TRAILER</span>
-                </motion.button>
-              </motion.div>
-
-              {/* Timer */}
-              <motion.div
+                <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="mt-6 sm:mt-8 inline-flex items-center gap-3 sm:gap-4 px-4 sm:px-6 py-3 rounded-xl bg-warning/10 border border-warning/30"
+                className="mt-5 sm:mt-8 inline-flex items-center gap-3 sm:gap-4 px-4 sm:px-6 py-3 rounded-xl bg-warning/10 border border-warning/30"
               >
                 <Flame className="w-5 h-5 text-warning animate-pulse" />
                 <div>
@@ -269,6 +255,10 @@ const Landing = () => {
                   </p>
                 </div>
               </motion.div>
+              </motion.div>
+
+              {/* Timer */}
+              
             </div>
 
             {/* Right Side - VR Gamer Hero with Battle Effects */}

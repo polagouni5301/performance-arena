@@ -1,276 +1,427 @@
-# Performance Arena - Docker Deployment Guide
+# Performance Arena - Single Container Docker Deployment Guide
 
 ## Overview
-This guide covers deploying the Performance Arena application using Docker with separate backend and frontend services.
+This guide covers deploying the entire Performance Arena application (backend + frontend) as a single Docker container with both services managed by Supervisor.
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Single Docker Container                  │
+│                                                              │
+│  ┌────────────────────────────────────────────────────────┐│
+│  │            Supervisor (Process Manager)                ││
+│  │                                                        ││
+│  │  ┌──────────────────┐        ┌──────────────────┐   ││
+│  │  │      Nginx       │        │   Node.js Backend││   ││
+│  │  │   (Port 8080)    │────────│   (Port 3000)    │   ││
+│  │  │  - Serves React  │        │  - Express API   │   ││
+│  │  │  - Proxies /api/ │        │  - Data Services │   ││
+│  │  └──────────────────┘        └──────────────────┘   ││
+│  │                                                        ││
+│  └────────────────────────────────────────────────────────┘│
+│                                                              │
+│  Data Volumes:                                               │
+│  - backend/data (mounted)                                    │
+│  - logs (mounted)                                            │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ## Files Created
 
-### 1. **Dockerfile.backend**
-Multi-stage Dockerfile for the Node.js/Express backend:
-- Uses `node:20-alpine` for lightweight image
-- Installs dependencies in build stage
-- Runs as non-root user (nodejs) for security
+### 1. **Dockerfile**
+Single comprehensive Dockerfile that:
+- Uses `node:20-alpine` as base
+- Installs Nginx and Supervisor
+- Builds backend Node.js dependencies
+- Builds React frontend with Vite
+- Configures both services to run together
+- Uses non-root user for security
 - Includes health checks
-- Proper signal handling with tini
 
-**Key Features:**
-- Production-optimized (only production deps)
-- Health checks every 30 seconds
-- 40-second startup grace period
-- Exposes port 3000
+**Build Process:**
+1. Install nginx, supervisor, curl, tini
+2. Copy and install backend dependencies
+3. Copy and install frontend dependencies
+4. Build frontend with `npm run build`
+5. Copy nginx and supervisor configs
+6. Deploy frontend dist to nginx
+7. Set up permissions and user
 
-### 2. **Dockerfile.frontend**
-Multi-stage Dockerfile for the React/Vite frontend:
-- Builds React app in Node.js image
-- Serves via Nginx in final stage
-- `nginx:alpine` for production serving
-- Proxies API requests to backend
-- Gzip compression enabled
+### 2. **supervisord.conf**
+Process manager configuration:
+- Manages both Nginx and Node.js processes
+- Logs to stdout (Docker-friendly)
+- Auto-restarts failed processes
+- Groups services together
+- Proper signal handling
 
-**Key Features:**
-- SPA routing configured
-- Static file caching (1 year)
-- API proxy to `/api/` endpoint
-- Security headers included
+**Processes:**
+- `nginx`: Web server (port 8080)
+- `nodejs`: Express backend (port 3000)
+
+### 3. **docker-compose.single.yml**
+Single-service docker-compose:
+- Builds from Dockerfile
+- Exposes both ports (8080, 3000)
+- Volume mounts for data and logs
 - Health checks
+- Resource limits (optional)
+- Auto-restart policy
 
-### 3. **nginx.conf**
-Nginx configuration for frontend serving:
-- SPA routing with fallback to index.html
-- API reverse proxy to backend service
-- Security headers (X-Frame-Options, X-Content-Type-Options, etc.)
-- Gzip compression for assets
-- Cache control for static files
-- Protection against hidden files
-
-### 4. **docker-compose.yml**
-Orchestration file for multi-container deployment:
-- Defines both backend and frontend services
-- Custom network for inter-service communication
-- Dependency ordering (frontend waits for backend)
-- Health checks for both services
-- Volume mounting for data persistence
-- Automatic restart policy
-- Environment variable support
-
-### 5. **.env.docker**
-Environment configuration template:
-- Configurable ports
-- Node environment setting
-- Placeholders for sensitive data (DB URL, secrets)
-
-### 6. **.dockerignore**
-Optimizes build context:
-- Excludes node_modules, dist, build artifacts
-- Prevents large build contexts
+### 4. **nginx.conf** (Updated)
+Nginx configuration modified for single container:
+- Changed backend proxy from `http://backend:3000` to `http://localhost:3000`
+- Everything else remains the same
 
 ## Quick Start
 
-### Prerequisites
-- Docker and Docker Compose installed
-- Git repository cloned
-
-### Option 1: Using Docker Compose (Recommended)
+### Option 1: Using docker-compose (Recommended)
 
 ```bash
-# Start both services
-docker-compose up -d
+# Start the application
+docker-compose -f docker-compose.single.yml up -d
 
 # View logs
-docker-compose logs -f
+docker-compose -f docker-compose.single.yml logs -f
 
-# Stop services
-docker-compose down
+# Check status
+docker-compose -f docker-compose.single.yml ps
+
+# Stop the application
+docker-compose -f docker-compose.single.yml down
 ```
 
-Visit: http://localhost:8080
-
-### Option 2: Build Images Separately
+### Option 2: Build and Run Manually
 
 ```bash
-# Build backend image
-docker build -f Dockerfile.backend -t performance-arena-backend .
+# Build the image
+docker build -t performance-arena .
 
-# Build frontend image
-docker build -f Dockerfile.frontend -t performance-arena-frontend .
-
-# Run backend
+# Run the container
 docker run -d \
-  --name backend \
-  -p 3000:3000 \
-  -v $(pwd)/backend/data:/app/data \
-  performance-arena-backend
-
-# Run frontend
-docker run -d \
-  --name frontend \
+  --name performance-arena \
   -p 8080:8080 \
-  --link backend:backend \
-  performance-arena-frontend
+  -p 3000:3000 \
+  -v $(pwd)/backend/data:/app/backend/data \
+  -v $(pwd)/logs:/var/log/supervisor \
+  performance-arena
+
+# View logs
+docker logs -f performance-arena
+
+# Stop the container
+docker stop performance-arena
+docker rm performance-arena
 ```
 
-## Service Details
+## Access Points
 
-### Backend Service
-- **Container**: `performance-arena-backend`
-- **Port**: 3000
-- **Health Check**: Every 30s (40s startup grace)
-- **Data Volume**: `./backend/data` → `/app/data`
-- **Network**: performance-arena-network
+Once running:
+- **Frontend**: http://localhost:8080
+- **Backend API**: http://localhost:3000
+- **Health Check**: http://localhost:8080/health (via proxy to backend)
 
-### Frontend Service
-- **Container**: `performance-arena-frontend`
-- **Port**: 8080
-- **Health Check**: Every 30s (10s startup grace)
-- **Network**: performance-arena-network
-- **Backend URL**: http://backend:3000 (internal)
+## Configuration
 
-## Advanced Usage
-
-### Custom Environment Variables
+### Environment Variables
 
 Create `.env` file:
 ```env
 NODE_ENV=production
-BACKEND_PORT=3000
 FRONTEND_PORT=8080
-DATABASE_URL=your_db_url
-JWT_SECRET=your_secret_key
+BACKEND_PORT=3000
+# Add other variables:
+# DATABASE_URL=your_db_url
+# JWT_SECRET=your_secret
 ```
 
 Run with custom env:
 ```bash
-docker-compose --env-file .env up -d
+docker-compose -f docker-compose.single.yml --env-file .env up -d
 ```
 
-### Logs and Monitoring
+### Resource Limits
 
-```bash
-# View all logs
-docker-compose logs
-
-# Follow backend logs
-docker-compose logs -f backend
-
-# Follow frontend logs
-docker-compose logs -f frontend
-
-# Specific service status
-docker-compose ps
-
-# Resource usage
-docker stats
+Edit `docker-compose.single.yml` to adjust:
+```yaml
+deploy:
+  resources:
+    limits:
+      cpus: '2'        # Max 2 CPUs
+      memory: 2G       # Max 2GB RAM
+    reservations:
+      cpus: '1'        # Reserve 1 CPU
+      memory: 1G       # Reserve 1GB RAM
 ```
 
-### Development Mode
+## Monitoring and Logs
 
-For development, use volume mounts:
-
+### View All Logs
 ```bash
-# Add to docker-compose.yml backend service:
-volumes:
-  - ./backend:/app
-  - /app/node_modules
-
-# Then rebuild and run
-docker-compose up -d --build
+docker-compose -f docker-compose.single.yml logs
 ```
 
-## Production Deployment
-
-### Registry/Cloud Deployment
-
+### Follow Logs in Real-time
 ```bash
-# Tag images
-docker tag performance-arena-backend myregistry/performance-arena-backend:1.0.0
-docker tag performance-arena-frontend myregistry/performance-arena-frontend:1.0.0
-
-# Push to registry
-docker push myregistry/performance-arena-backend:1.0.0
-docker push myregistry/performance-arena-frontend:1.0.0
+docker-compose -f docker-compose.single.yml logs -f
 ```
 
-### Kubernetes Deployment
-
-Convert docker-compose to Kubernetes manifests:
+### View Last 100 Lines
 ```bash
-kompose convert -f docker-compose.yml -o k8s/
+docker-compose -f docker-compose.single.yml logs --tail=100
+```
+
+### Check Service Health
+```bash
+# Check container status
+docker-compose -f docker-compose.single.yml ps
+
+# Detailed inspection
+docker-compose -f docker-compose.single.yml ps --verbose
+```
+
+### Check Process Status Inside Container
+```bash
+# View supervisor status
+docker-compose -f docker-compose.single.yml exec app supervisorctl status
+
+# View nginx status
+docker-compose -f docker-compose.single.yml exec app supervisorctl status nginx
+
+# View nodejs status
+docker-compose -f docker-compose.single.yml exec app supervisorctl status nodejs
+```
+
+## Development Workflow
+
+For development with live reload:
+
+### Option 1: Keep docker-compose for production, use npm for development
+```bash
+# Terminal 1: Backend
+cd backend
+npm install
+npm run dev
+
+# Terminal 2: Frontend
+cd frontend
+npm install
+npm run dev
+```
+
+### Option 2: Modify Dockerfile for development
+Create `Dockerfile.dev`:
+```dockerfile
+FROM node:20-alpine
+WORKDIR /app
+RUN apk add --no-cache nginx supervisor
+
+# Copy both projects
+COPY backend backend
+COPY frontend frontend
+
+# Install dependencies (no build)
+WORKDIR /app/backend
+RUN npm install
+
+WORKDIR /app/frontend
+RUN npm install
+
+# Copy configs
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY supervisord.conf /etc/supervisord.conf
+
+# Expose ports
+EXPOSE 8080 3000 5173
+
+ENTRYPOINT ["/sbin/tini", "--"]
+CMD ["supervisord", "-c", "/etc/supervisord.conf"]
+```
+
+Build and run:
+```bash
+docker build -f Dockerfile.dev -t performance-arena:dev .
+docker run -d \
+  --name performance-arena-dev \
+  -p 8080:8080 \
+  -p 3000:3000 \
+  -p 5173:5173 \
+  -v $(pwd)/backend:/app/backend \
+  -v $(pwd)/frontend:/app/frontend \
+  performance-arena:dev
 ```
 
 ## Troubleshooting
 
-### Backend not starting
+### Container fails to start
 ```bash
-docker-compose logs backend
-# Check port 3000 is available
+# Check logs
+docker-compose -f docker-compose.single.yml logs
+
+# Common issues:
+# - Port already in use: lsof -i :8080 or lsof -i :3000
+# - Missing dependencies: rebuild with --no-cache
+docker-compose -f docker-compose.single.yml up -d --build --no-cache
+```
+
+### Nginx not serving frontend
+```bash
+# Check if frontend built properly
+docker-compose -f docker-compose.single.yml exec app ls -la /usr/share/nginx/html
+
+# Restart nginx
+docker-compose -f docker-compose.single.yml exec app supervisorctl restart nginx
+```
+
+### Backend API not responding
+```bash
+# Check backend logs
+docker-compose -f docker-compose.single.yml exec app supervisorctl tail -100 nodejs
+
+# Restart backend
+docker-compose -f docker-compose.single.yml exec app supervisorctl restart nodejs
+```
+
+### Port conflicts
+```bash
+# Find what's using the port
+lsof -i :8080
 lsof -i :3000
+
+# Run on different ports
+FRONTEND_PORT=9000 BACKEND_PORT=4000 \
+  docker-compose -f docker-compose.single.yml up -d
 ```
 
-### Frontend can't reach backend
+### Permission issues
 ```bash
-# Verify network connectivity
-docker-compose exec frontend ping backend
-
-# Check backend health
-docker-compose exec backend curl http://localhost:3000/health
-```
-
-### Port already in use
-```bash
-# Use custom ports in docker-compose
-BACKEND_PORT=4000 FRONTEND_PORT=9000 docker-compose up -d
-```
-
-### Clear everything and rebuild
-```bash
-docker-compose down -v
+# Rebuild with clean state
+docker-compose -f docker-compose.single.yml down -v
 docker system prune -a
-docker-compose up -d --build
+docker-compose -f docker-compose.single.yml up -d --build
+```
+
+## Production Deployment
+
+### 1. Build and Tag Image
+```bash
+docker build -t myregistry/performance-arena:1.0.0 .
+docker push myregistry/performance-arena:1.0.0
+```
+
+### 2. Deploy to Server
+```bash
+docker pull myregistry/performance-arena:1.0.0
+docker run -d \
+  --name performance-arena \
+  -p 8080:8080 \
+  -p 3000:3000 \
+  -v /data/backend:/app/backend/data \
+  -v /logs:/var/log/supervisor \
+  --restart unless-stopped \
+  myregistry/performance-arena:1.0.0
+```
+
+### 3. Docker Swarm
+```bash
+docker service create \
+  --name performance-arena \
+  --publish 8080:8080 \
+  --publish 3000:3000 \
+  --mount type=bind,source=/data/backend,target=/app/backend/data \
+  --restart-condition on-failure \
+  myregistry/performance-arena:1.0.0
+```
+
+### 4. Docker Secrets (for sensitive data)
+```bash
+# Create secrets
+echo "your_jwt_secret" | docker secret create jwt_secret -
+echo "your_db_url" | docker secret create db_url -
+
+# Use in service
+docker service create \
+  --secret jwt_secret \
+  --secret db_url \
+  # ... rest of config
 ```
 
 ## Security Best Practices
 
 ✅ **Implemented:**
-- Non-root user execution
-- Alpine base images (smaller attack surface)
-- Health checks (automatic restart on failure)
+- Non-root user execution (appuser)
+- Alpine base image (minimal attack surface)
+- Health checks (auto-restart on failure)
 - Security headers in Nginx
-- GZIP compression
+- Process isolation via supervisor
 - Signal handling with tini
 
 🔒 **Additional Recommendations:**
-1. Use secrets management (Docker Secrets for Swarm, K8s Secrets)
+1. Use environment variables for secrets (not hardcoded)
 2. Enable Docker content trust
-3. Scan images for vulnerabilities: `docker scan performance-arena-backend`
+3. Scan image for vulnerabilities: `docker scan performance-arena`
 4. Use read-only root filesystem where possible
 5. Implement rate limiting in Nginx
 6. Enable HTTPS/TLS in production
 7. Regular image updates and patches
+8. Use secrets management (Docker Secrets, Vault)
 
 ## Performance Optimization
 
-- **Frontend**: Nginx gzip compression, static file caching, SPA routing
-- **Backend**: Multi-stage build, minimal dependencies, proper JVM/Node settings
-- **Network**: Internal Docker network (no port exposure for inter-service communication)
-- **Restart Policy**: Unless-stopped (automatic recovery on crash)
+- **Smaller Image**: Alpine base (reduced from ~1GB to ~200MB)
+- **Multi-stage concepts**: Only production dependencies
+- **Caching**: Nginx caches static files (1 year)
+- **Compression**: Gzip enabled on assets
+- **Process Management**: Supervisor ensures both services always run
+- **Resource Limits**: Can be configured in docker-compose
+
+Estimated image size: ~300-400MB
+
+## Backup and Restore
+
+### Backup Data
+```bash
+docker-compose -f docker-compose.single.yml exec app \
+  tar czf - -C /app/backend data | \
+  gzip > backup_$(date +%Y%m%d_%H%M%S).tar.gz
+```
+
+### Restore Data
+```bash
+docker-compose -f docker-compose.single.yml exec -T app \
+  tar xzf - -C /app/backend < backup_20260128_120000.tar.gz
+```
 
 ## Cleanup
 
 ```bash
-# Stop and remove all containers
-docker-compose down
+# Stop and remove container
+docker-compose -f docker-compose.single.yml down
 
 # Remove volumes as well
-docker-compose down -v
+docker-compose -f docker-compose.single.yml down -v
 
-# Remove images
-docker rmi performance-arena-backend performance-arena-frontend
+# Remove image
+docker rmi performance-arena
 
 # Full cleanup
 docker system prune -a --volumes
 ```
 
+## Comparing Approaches
+
+| Feature | Multi-Container | Single Container |
+|---------|----------------|------------------|
+| Scalability | Better (scale separately) | Limited |
+| Resource Efficiency | Lower (more overhead) | Higher |
+| Deployment | More complex | Simpler |
+| Development | Easier debugging | Harder debugging |
+| Troubleshooting | More granular | Less granular |
+| Recommended For | Production | Small deployments |
+
 ---
 
 **Version**: 1.0  
-**Last Updated**: January 28, 2026
+**Last Updated**: January 28, 2026  
+**Recommended**: Use this single-container approach for small to medium deployments. For larger production systems, use multi-container with Docker Compose or Kubernetes.

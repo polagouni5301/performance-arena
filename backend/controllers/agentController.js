@@ -172,8 +172,8 @@ function getWeeklyChallenges(guide) {
 
 function getLevelTiers() {
   return [
-    { level: 1, name: 'Beginner', minXP: 0, maxXP: 999, color: '#94a3b8' },
-    { level: 2, name: 'Intermediate', minXP: 1000, maxXP: 4999, color: '#3b82f6' },
+    { level: 1, name: 'Elite Master', minXP: 0, maxXP: 999, color: '#94a3b8' },
+    { level: 2, name: 'Diamond', minXP: 1000, maxXP: 4999, color: '#3b82f6' },
     { level: 3, name: 'Expert', minXP: 5000, maxXP: 14999, color: '#10b981' },
     { level: 4, name: 'Elite', minXP: 15000, maxXP: 49999, color: '#f59e0b' },
     { level: 5, name: 'Master', minXP: 50000, maxXP: Infinity, color: '#ef4444' }
@@ -496,7 +496,7 @@ class AgentController {
       }
 
       const tokenBalance = guide.calculated.points || 0;
-      const tokensNeeded = 250; // Points needed to unlock spin wheel (as per requirements)
+      const tokensNeeded = 50; // Points needed to unlock spin wheel (as per requirements)
       
       // Check if all weekly challenges are completed for wheel unlock
       const challenges = getWeeklyChallenges(guide);
@@ -627,7 +627,7 @@ class AgentController {
       const sorted = allGuides.sort((a, b) => b.calculated.xp - a.calculated.xp);
       const rank = sorted.findIndex(g => g.guide_id === agentId) + 1;
       const total = allGuides.length;
-      const level = rank <= total * 0.2 ? 'Master' : rank <= total * 0.45 ? 'Elite' : rank <= total * 0.7 ? 'Expert' : rank <= total * 0.9 ? 'Intermediate' : 'Beginner';
+      const level = rank <= total * 0.2 ? 'Master' : rank <= total * 0.45 ? 'Elite' : rank <= total * 0.7 ? 'Expert' : rank <= total * 0.9 ? 'Diamond' : 'Elite Master';
 
       const response = {
         level: 12, // Mock

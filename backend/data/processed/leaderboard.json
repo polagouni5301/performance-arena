@@ -1,102 +1,102 @@
 [
   {
-    "user_id": 703343923,
+    "user_id": 703345398,
     "period": "weekly",
     "period_type": "current",
     "rank": 1,
     "previous_rank": 2,
-    "total_points": 630,
-    "total_xp": 1156,
-    "score": 89
+    "total_points": 537,
+    "total_xp": 809,
+    "score": 179
   },
   {
-    "user_id": 703440049,
+    "user_id": 703425663,
     "period": "weekly",
     "period_type": "current",
     "rank": 2,
     "previous_rank": 3,
-    "total_points": 478,
-    "total_xp": 1255,
-    "score": 93
+    "total_points": 698,
+    "total_xp": 973,
+    "score": 84
   },
   {
-    "user_id": 703327927,
+    "user_id": 703316290,
     "period": "weekly",
     "period_type": "current",
     "rank": 3,
     "previous_rank": 4,
-    "total_points": 558,
-    "total_xp": 909,
-    "score": 150
+    "total_points": 383,
+    "total_xp": 1286,
+    "score": 148
   },
   {
-    "user_id": 703338883,
+    "user_id": 703346801,
     "period": "weekly",
     "period_type": "current",
     "rank": 4,
     "previous_rank": 5,
-    "total_points": 550,
-    "total_xp": 1447,
-    "score": 121
+    "total_points": 423,
+    "total_xp": 570,
+    "score": 114
   },
   {
-    "user_id": 703403396,
+    "user_id": 703347115,
     "period": "weekly",
     "period_type": "current",
     "rank": 5,
     "previous_rank": 6,
-    "total_points": 475,
-    "total_xp": 1179,
-    "score": 95
+    "total_points": 567,
+    "total_xp": 948,
+    "score": 144
   },
   {
-    "user_id": 703322123,
+    "user_id": 703341431,
     "period": "weekly",
     "period_type": "current",
     "rank": 6,
     "previous_rank": 7,
-    "total_points": 612,
-    "total_xp": 1354,
-    "score": 127
+    "total_points": 271,
+    "total_xp": 762,
+    "score": 142
   },
   {
-    "user_id": 703347273,
+    "user_id": 703290400,
     "period": "weekly",
     "period_type": "current",
     "rank": 7,
     "previous_rank": 8,
-    "total_points": 616,
-    "total_xp": 860,
-    "score": 153
+    "total_points": 206,
+    "total_xp": 1301,
+    "score": 84
   },
   {
-    "user_id": 703313378,
+    "user_id": 703313188,
     "period": "weekly",
     "period_type": "current",
     "rank": 8,
     "previous_rank": 9,
-    "total_points": 255,
-    "total_xp": 1292,
-    "score": 115
+    "total_points": 280,
+    "total_xp": 1260,
+    "score": 179
   },
   {
-    "user_id": 703317133,
+    "user_id": 703336567,
     "period": "weekly",
     "period_type": "current",
     "rank": 9,
     "previous_rank": 10,
-    "total_points": 261,
-    "total_xp": 864,
-    "score": 130
+    "total_points": 694,
+    "total_xp": 858,
+    "score": 168
   },
   {
-    "user_id": 703442829,
+    "user_id": 703231006,
     "period": "weekly",
     "period_type": "current",
     "rank": 10,
     "previous_rank": 11,
-    "total_points": 453,
-    "total_xp": 764,
-    "score": 150
+    "total_points": 530,
+    "total_xp": 932,
+    "score": 101
   }
 ]

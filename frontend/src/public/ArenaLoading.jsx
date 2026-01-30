@@ -1,8 +1,4 @@
-/**
- * Arena Loading - Neural Sync Sequence
- * Immersive data streaming loading experience with diagnostics
- * Redirects to role-based dashboard after loading completes
- */
+
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NeuralSyncLoader from "@/components/loading/NeuralSyncLoader";
