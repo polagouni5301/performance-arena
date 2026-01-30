@@ -734,19 +734,13 @@ const Performance = () => {
             const productionData = Array.from({ length: 25 }).map((_, i) => ({ day: `Day ${i + 1}`, hours: 8 }));
             const totalHours = productionData.reduce((s, d) => s + Number(d.hours || 0), 0);
             return (
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
-                <div className="lg:col-span-1">
+              <div className="space-y-6 mb-6">
+                <div className="w-full">
                   <ProductionReport mandays={totalHours} guidesProcessed={5} period="Last Month" />
-                  <div className="mt-4 p-3 rounded-lg bg-muted/10 border border-border text-sm text-muted-foreground">
-                    <div className="font-medium text-foreground">Messaging - Sales Support</div>
-                    <div className="text-xs mt-1">25 days · 8 hrs/day · <strong>{totalHours} hrs</strong></div>
-                    <div className="text-xs mt-2">Guides included: 5 (sample)</div>
-                  </div>
                 </div>
 
-                <div className="lg:col-span-2">
-                  <div className="p-4 rounded-xl bg-slate-900/30 border border-slate-700/20 h-56">
-                    <ResponsiveContainer width="100%" height="100%">
+                <div className="p-4 rounded-xl bg-slate-900/30 border border-slate-700/20 h-56">
+                  <ResponsiveContainer width="100%" height="100%">
                       <BarChart data={productionData} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
                         <CartesianGrid strokeDasharray="3 3" strokeOpacity={0.06} />
                         <XAxis dataKey="day" tick={{ fontSize: 10 }} interval={4} />

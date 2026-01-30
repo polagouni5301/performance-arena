@@ -14,17 +14,17 @@ const defaultRewards = [
 
 const RewardsGallery = ({ rewards = defaultRewards, images = {} }) => {
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
       {rewards.map((r) => (
-        <div key={r.id} className="flex flex-col items-center p-3 rounded-lg bg-slate-900/30 border border-slate-700/20">
-          <div className="w-20 h-20 mb-2 rounded-md bg-gradient-to-br from-slate-800 to-slate-700 flex items-center justify-center overflow-hidden">
+        <div key={r.id} className="flex flex-col items-center group">
+          <div className="w-32 h-32 mb-4 rounded-xl bg-gradient-to-br from-slate-800 to-slate-700 flex items-center justify-center overflow-hidden border border-slate-700/40 hover:border-primary/50 transition-all group-hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
             {images[r.key] ? (
-              <img src={images[r.key]} alt={r.name} className="w-full h-full object-contain" />
+              <img src={images[r.key]} alt={r.name} className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-300" />
             ) : (
-              <div className="text-xs text-muted-foreground">{r.name}</div>
+              <div className="text-xs text-muted-foreground text-center px-2">{r.name}</div>
             )}
           </div>
-          <div className="text-xs text-muted-foreground">{r.name}</div>
+          <div className="text-sm font-medium text-foreground text-center group-hover:text-primary transition-colors">{r.name}</div>
         </div>
       ))}
     </div>
