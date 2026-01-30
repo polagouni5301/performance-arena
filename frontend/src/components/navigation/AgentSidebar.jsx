@@ -22,6 +22,7 @@ const navItems = [
   { path: "/agent/performance", icon: TrendingUp, label: "Performance" },
   { path: "/agent/leaderboard", icon: Trophy, label: "Leaderboard" },
   { path: "/agent/rewards", icon: Gift, label: "Rewards & Achievements" },
+  { path: "/agent/rewards-gallery", icon: Medal, label: "Rewards Gallery" },
 ];
 
 export const SIDEBAR_COLLAPSED_WIDTH = 64;

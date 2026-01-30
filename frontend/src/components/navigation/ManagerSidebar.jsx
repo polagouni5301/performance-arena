@@ -18,7 +18,6 @@ const navItems = [
   { path: "/manager/leaderboard", icon: BarChart3, label: "Leaderboard" },
   { path: "/manager/contests", icon: Zap, label: "Contests" },
   { path: "/manager/rewards", icon: Gift, label: "Rewards" },
-  { path: "/manager/reports", icon: FileText, label: "Reports" },
 ];
 
 export const SIDEBAR_COLLAPSED_WIDTH = 64;

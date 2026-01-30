@@ -90,10 +90,13 @@ const ManagerOverview = () => {
                 </div>
               </div>
               <div className="flex items-baseline gap-2">
-                <span className="text-3xl font-bold text-foreground" style={{ fontFamily: "'Sora', sans-serif" }}>
-                  {(data.teamXps || 0).toLocaleString()
-                }</span>
-              </div>
+                  <span className="text-3xl font-bold text-foreground" style={{ fontFamily: "'Sora', sans-serif" }}>
+                    {((typeof data.teamXps !== 'undefined' && data.teamXps !== null)
+                      ? data.teamXps
+                      : (data.teamHealthScore ? Math.round(data.teamHealthScore * 100) : 0)
+                    ).toLocaleString()}
+                  </span>
+                </div>
             </motion.div>
 
             {/* Participation Rate */}
@@ -343,7 +346,7 @@ const ManagerOverview = () => {
                     <p className="text-sm text-foreground">
                       <span className="font-medium">{item.name || item.agent}</span>{" "}
                       <span className="text-muted-foreground">won</span>{" "}
-                      <span className="text-primary font-medium">{item.reward}</span>
+                      <span className="text-primary font-medium">{item.reward || item.prize || item.value || item.points || 'Points'}</span>
                     </p>
                     <p className="text-xs text-muted-foreground mt-0.5">{item.time || item.date || 'just now'} • {item.context || item.dept || 'Team'}</p>
                   </div>

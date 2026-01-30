@@ -45,6 +45,17 @@ const RewardsAndReports = () => {
         const result = await fetchRewardsAudit(user.id);
         if (!mounted) return;
         setData(result);
+        // populate localHistory immediately from fetched result to avoid
+        // any conditional hook ordering issues between renders
+        const rewardHistory = (result?.rewardHistory || []).map(item => ({
+          avatar: item.guideName ? item.guideName.split(' ').map(n => n[0]).join('') : 'N/A',
+          agent: item.guideName || 'Unknown',
+          reward: item.reward || 'Points',
+          points: item.points || 0,
+          date: item.date || new Date().toLocaleDateString(),
+          status: item.status || 'pending'
+        }));
+        setLocalHistory(rewardHistory);
       } catch (err) {
         console.error('Failed to load rewards audit', err);
       } finally {
@@ -54,7 +65,6 @@ const RewardsAndReports = () => {
     load();
     return () => { mounted = false; };
   }, [user?.id]);
-
   // Show loading while auth is loading or if user is not authenticated
   if (authLoading || !user) {
     return <DashboardSkeleton />;
@@ -80,17 +90,6 @@ const RewardsAndReports = () => {
       "hsl(330, 100%, 60%)", // pink
     ][idx % 5]
   }));
-  useEffect(() => {
-    const rewardHistory = (data?.rewardHistory || []).map(item => ({
-      avatar: item.guideName ? item.guideName.split(' ').map(n => n[0]).join('') : 'N/A',
-      agent: item.guideName || 'Unknown',
-      reward: item.reward || 'Points',
-      points: item.points || 0,
-      date: item.date || new Date().toLocaleDateString(),
-      status: item.status || 'pending'
-    }));
-    setLocalHistory(rewardHistory);
-  }, [data]);
 
   const handleMarkDistributed = (idx) => {
     setLocalHistory(prev => {

@@ -11,6 +11,7 @@ import PlayZone from "../pages/agent/PlayZone";
 import Performance from "../pages/agent/Performance";
 import Leaderboard from "../pages/agent/Leaderboard";
 import RewardsAndAchievements from "../pages/agent/RewardsAndAchievements";
+import RewardsGalleryPage from "../pages/agent/RewardsGalleryPage";
 
 // Manager Pages
 import ManagerOverview from "../pages/manager/ManagerOverview";
@@ -19,7 +20,6 @@ import ContestManagement from "../pages/manager/ContestManagement";
 import ContestWizard from "../pages/manager/ContestWizard";
 import ManagerContestBuilder from "../pages/manager/ManagerContestBuilder";
 import RewardsAndReports from "../pages/manager/RewardsAndReports";
-import Reports from "../pages/manager/Reports";
 import MyTeam from "../pages/manager/MyTeam";
 import ManagerLeaderboard from "../pages/manager/ManagerLeaderboard";
 import Settings from "../pages/manager/Settings";
@@ -68,6 +68,7 @@ const Router = () => {
         <Route path="performance" element={<Performance />} />
         <Route path="leaderboard" element={<Leaderboard />} />
         <Route path="rewards" element={<RewardsAndAchievements />} />
+        <Route path="rewards-gallery" element={<RewardsGalleryPage />} />
       </Route>
 
       {/* Manager Routes */}
@@ -76,7 +77,6 @@ const Router = () => {
         <Route path="performance" element={<ManagerLeaderboard />} />
         <Route path="contests" element={<ContestManagement />} />
         <Route path="rewards" element={<RewardsAndReports />} />
-        <Route path="reports" element={<Reports />} />
         <Route path="contests/new" element={<ManagerContestBuilder />} />
         <Route path="contests/wizard" element={<ContestWizard />} />
         <Route path="team" element={<MyTeam />} />
