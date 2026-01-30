@@ -6,10 +6,7 @@ import { useAgentDashboard } from "./hooks.jsx";
 import { AgentDashboardSkeleton } from "../../components/ui/PageSkeleton";
 import { motion, AnimatePresence } from "framer-motion";
 import ContestBanner from "@/components/game/ContestBanner";
-import ProductionReport from '@/components/ui/ProductionReport';
-import RewardsGallery from '@/components/ui/RewardsGallery';
-import genpactLogo from '@/assets/genpact-logo.svg';
-import godaddyLogo from '@/assets/godaddy-logo.svg';
+// ProductionReport and RewardsGallery removed from Agent overview per design
 
 const AgentHome = () => {
   const { data, loading, error } = useAgentDashboard();
@@ -248,27 +245,19 @@ const AgentHome = () => {
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-wrap items-center justify-between gap-6"
         >
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2">
-              <span className="font-display font-bold text-foreground">gaMEtrix</span>
-              <img src={genpactLogo} alt="Genpact" className="w-20 h-6 object-contain" />
-            </div>
-            <div className="ml-4 hidden md:block">
-              <div className="text-xs text-muted-foreground mb-1">Logs</div>
-              <div className="text-sm bg-muted/20 p-2 rounded-md max-w-xs">
-                <div className="text-xs text-muted-foreground">2026-01-28 09:02 - System sync completed</div>
-                <div className="text-xs text-muted-foreground">2026-01-29 14:10 - Rewards inventory updated</div>
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
+                <span className="font-display font-bold text-foreground">gaMEtrix</span>
+              </div>
+              <div>
+                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight mb-1" style={{ fontFamily: "'Sora', sans-serif", background: "linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--primary)) 50%, hsl(var(--secondary)) 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                  Command Center
+                </h1>
+                <p className="text-sm text-muted-foreground font-mono">
+                  <span className="text-secondary">&gt;</span> Your daily performance hub
+                </p>
               </div>
             </div>
-            <div>
-              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight mb-1" style={{ fontFamily: "'Sora', sans-serif", background: "linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--primary)) 50%, hsl(var(--secondary)) 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-                Command Center
-              </h1>
-              <p className="text-sm text-muted-foreground font-mono">
-                <span className="text-secondary">&gt;</span> Your daily performance hub
-              </p>
-            </div>
-          </div>
           <div className="flex items-center gap-4">
             {/* Streak Badge */}
             <motion.div whileHover={{ scale: 1.05 }} className="flex flex-col items-center px-4 py-2 rounded-xl glass-card border border-warning/50" style={{ boxShadow: "0 0 20px hsl(var(--warning) / 0.2)" }}>
@@ -284,9 +273,7 @@ const AgentHome = () => {
               <span className="font-bold text-lg text-secondary font-mono">{formatTime(countdown.hours)}:{formatTime(countdown.minutes)}:{formatTime(countdown.seconds)}</span>
             </div>
           </div>
-          <div className="ml-4">
-            <img src={godaddyLogo} alt="GoDaddy" className="w-28 h-8 object-contain" />
-          </div>
+          <div className="ml-4" />
         </motion.header>
 
         {/* ═══════════════════════════════════════════════════════════════════
@@ -426,31 +413,7 @@ const AgentHome = () => {
               })}
             </div>
 
-            {/* Production Report & Rewards Gallery (Agent view) */}
-            <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <div className="lg:col-span-1">
-                <ProductionReport mandays={25} guidesProcessed={5} period={"Last Month"} />
-                <div className="mt-3 rounded-xl p-3 bg-muted/40 border border-border">
-                  <h4 className="text-sm font-semibold text-foreground mb-2">Detailed Guide Log (Messaging - Sales Support)</h4>
-                  <div className="text-xs text-muted-foreground">Showing last month's login: 25 days × 8 hours = 200 hours each</div>
-                  <div className="mt-3 space-y-2">
-                    {["Sayed Mahaboob Basha", "Sanjay Kumar Sahu", "Mohammed Naseer", "Mounika Gadeela", "Sahaja Katrimala"].map((name, i) => (
-                      <div key={i} className="flex items-center justify-between text-sm">
-                        <div>{name}</div>
-                        <div className="text-muted-foreground">25 days · 200 hrs</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="lg:col-span-2">
-                <div className="p-4 rounded-xl bg-muted/30 border border-border overflow-hidden">
-                  <h4 className="text-lg font-semibold text-foreground mb-3">Rewards Gallery</h4>
-                  <RewardsGallery />
-                </div>
-              </div>
-            </div>
+            {/* ProductionReport and RewardsGallery removed from Agent overview per design */}
 
             {/* Overall Progress Bar */}
             <div className="space-y-2">

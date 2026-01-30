@@ -18,7 +18,7 @@ import TeamPerformance from "../pages/manager/TeamPerformance";
 import ContestManagement from "../pages/manager/ContestManagement";
 import ContestWizard from "../pages/manager/ContestWizard";
 import ManagerContestBuilder from "../pages/manager/ManagerContestBuilder";
-import RewardsAudit from "../pages/manager/RewardsAudit";
+import RewardsAndReports from "../pages/manager/RewardsAndReports";
 import Reports from "../pages/manager/Reports";
 import MyTeam from "../pages/manager/MyTeam";
 import ManagerLeaderboard from "../pages/manager/ManagerLeaderboard";
@@ -75,7 +75,7 @@ const Router = () => {
         <Route index element={<ManagerOverview />} />
         <Route path="performance" element={<ManagerLeaderboard />} />
         <Route path="contests" element={<ContestManagement />} />
-        <Route path="rewards" element={<RewardsAudit />} />
+        <Route path="rewards" element={<RewardsAndReports />} />
         <Route path="reports" element={<Reports />} />
         <Route path="contests/new" element={<ManagerContestBuilder />} />
         <Route path="contests/wizard" element={<ContestWizard />} />
