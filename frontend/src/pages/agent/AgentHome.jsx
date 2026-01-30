@@ -246,9 +246,7 @@ const AgentHome = () => {
           className="flex flex-wrap items-center justify-between gap-6"
         >
             <div className="flex items-center gap-3">
-              <div className="flex items-center gap-2">
-                <span className="font-display font-bold text-foreground">gaMEtrix</span>
-              </div>
+              
               <div>
                 <h1 className="text-3xl lg:text-4xl font-bold tracking-tight mb-1" style={{ fontFamily: "'Sora', sans-serif", background: "linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--primary)) 50%, hsl(var(--secondary)) 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
                   Command Center

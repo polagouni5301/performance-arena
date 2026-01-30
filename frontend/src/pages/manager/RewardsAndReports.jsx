@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Download,
   Calendar,
@@ -164,34 +164,49 @@ const RewardsAndReports = () => {
         </div>
       </div>
 
-      {/* Pending Actions (collapsible) */}
-      <div className="mt-2">
-        <div className="flex items-center justify-between mb-2">
-          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Pending Actions</h2>
+      {/* Pending Actions (Premium Design) */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="p-6 rounded-2xl bg-gradient-to-br from-primary/20 via-card to-secondary/20 border border-primary/30 shadow-lg"
+      >
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h2 className="text-lg font-bold text-foreground mb-1">Pending Actions</h2>
+            <p className="text-sm text-muted-foreground">Review and approve pending reward distributions</p>
+          </div>
           <button
             onClick={() => setPendingOpen(p => !p)}
-            className="text-sm text-primary flex items-center gap-2"
+            className="px-4 py-2 rounded-lg bg-primary/20 text-primary hover:bg-primary/30 transition-colors text-sm font-medium"
           >
-            {pendingOpen ? 'Hide' : 'Show'}
+            {pendingOpen ? '✕ Hide' : '▼ Show'}
           </button>
         </div>
-        <div className="rounded-xl bg-muted/20 border border-border/50 p-3">
-          {pendingActions.map((p) => (
-            <div key={p.id} className="flex items-center justify-between py-2">
-              <div>
-                <p className="text-sm font-medium text-foreground">{p.title}</p>
-                <p className="text-xs text-muted-foreground">{p.info}</p>
-              </div>
-              <div>
-                <button className="px-2 py-1 text-xs rounded-lg bg-muted/50">Details</button>
-                {pendingOpen && (
-                  <div className="mt-2 text-xs text-muted-foreground">More info about action '{p.title}' shown here when expanded.</div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+        <AnimatePresence>
+          {pendingOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="space-y-3"
+            >
+              {pendingActions.map((p) => (
+                <div key={p.id} className="p-4 rounded-xl bg-card/50 border border-border/50 hover:border-primary/30 transition-colors">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex-1">
+                      <p className="font-semibold text-foreground">{p.title}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{p.info}</p>
+                    </div>
+                    <button className="px-3 py-1.5 rounded-lg bg-primary text-primary-foreground text-xs font-medium hover:bg-primary/90 transition-colors">
+                      Review
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
 
       {/* Main Grid */}
       <div className="grid lg:grid-cols-[1fr_320px] gap-6">
@@ -325,19 +340,36 @@ const RewardsAndReports = () => {
             </div>
 
             <div className="rounded-xl glass-card border border-border/50 overflow-hidden">
-              <div className="grid grid-cols-5 gap-4 p-4 border-b border-border bg-muted/30">
-                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Agent</div>
-                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Reward Claimed</div>
-                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider text-center">Points Spent</div>
+              <div className="grid grid-cols-4 gap-4 p-4 border-b border-border bg-muted/30">
+                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Guide</div>
+                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Reward Won</div>
                 <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider text-center">Date</div>
-                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider text-center">Status</div>
+                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider text-center">Context</div>
               </div>
 
               <div className="divide-y divide-border/50">
-                {localHistory
+                {(
+                  [
+                    { avatar: 'NT', agent: 'Nitha Thatikonda', reward: 'Headset', date: '2h ago', context: 'Q1 Drive' },
+                    { avatar: 'RK', agent: 'Ravi Kumar', reward: 'Sipper', date: '1d ago', context: 'Daily Spins' },
+                    { avatar: 'AS', agent: 'Anita Sharma', reward: 'Cheers', date: '3d ago', context: 'Monthly Sprint' },
+                    { avatar: 'PV', agent: 'Priya Verma', reward: 'Coffee Mug', date: '5d ago', context: 'Weekly Challenge' },
+                    { avatar: 'MJ', agent: 'Mitesh Joshi', reward: 'T-Shirt', date: '1w ago', context: 'Achievement Badge' },
+                    { avatar: 'SK', agent: 'Shweta Kapoor', reward: 'Bonus XPS', date: '1w ago', context: 'Performance Bonus' },
+                    { avatar: 'AK', agent: 'Arjun Kumar', reward: 'Laptop Bag', date: '2w ago', context: 'Milestone Reached' },
+                    { avatar: 'DM', agent: 'Deepak Malhotra', reward: 'Hoodie', date: '2w ago', context: 'Team Excellence' },
+                    { avatar: 'NP', agent: 'Neha Patel', reward: 'Bonus Points', date: '2w ago', context: 'Sales Target' },
+                    { avatar: 'RJ', agent: 'Rajesh Jadhav', reward: 'Sipper', date: '3w ago', context: 'Customer Feedback' },
+                    { avatar: 'VP', agent: 'Vidya Prakash', reward: 'Headset', date: '3w ago', context: 'Quality Score' },
+                    { avatar: 'HS', agent: 'Harsh Singh', reward: 'Coffee Mug', date: '1m ago', context: 'Leadership Award' },
+                    { avatar: 'SA', agent: 'Shreya Agarwal', reward: 'Cheers', date: '1m ago', context: 'Innovation' },
+                    { avatar: 'KD', agent: 'Kapil Desai', reward: 'T-Shirt', date: '1m ago', context: 'Performance Excellence' },
+                    { avatar: 'MP', agent: 'Meera Prabhu', reward: 'Bonus XPS', date: '1m ago', context: 'Consistency Award' }
+                  ]
+                )
                   .filter(item => item.agent.toLowerCase().includes(searchQuery.toLowerCase()))
                   .map((item, idx) => (
-                  <div key={idx} className="grid grid-cols-5 gap-4 p-4 hover:bg-muted/30 transition-colors">
+                  <div key={idx} className="grid grid-cols-4 gap-4 p-4 hover:bg-muted/30 transition-colors">
                     <div className="flex items-center gap-3">
                       <div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-pink-500 flex items-center justify-center text-white font-bold text-sm">
                         {item.avatar}
@@ -345,28 +377,13 @@ const RewardsAndReports = () => {
                       <span className="font-medium text-foreground text-sm">{item.agent}</span>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-sm text-primary">{item.reward}</span>
-                    </div>
-                    <div className="flex items-center justify-center">
-                      <span className="font-mono text-sm text-foreground">{item.points.toLocaleString()}</span>
+                      <span className="text-sm text-primary font-medium">{item.reward}</span>
                     </div>
                     <div className="flex items-center justify-center">
                       <span className="text-sm text-muted-foreground">{item.date}</span>
                     </div>
-                    <div className="flex items-center justify-center gap-2">
-                      <span className={`px-2 py-1 rounded-lg text-xs font-medium capitalize ${
-                        item.status === "distributed" ? "bg-success/20 text-success" : item.status === "claimed" ? "bg-success/20 text-success" : "bg-warning/20 text-warning"
-                      }`}>
-                        {item.status}
-                      </span>
-                      {item.status !== 'distributed' && (
-                        <button
-                          onClick={() => handleMarkDistributed(idx)}
-                          className="ml-2 px-2 py-1 text-xs rounded-lg bg-primary/20 text-primary hover:bg-primary/30"
-                        >
-                          Mark Distributed
-                        </button>
-                      )}
+                    <div className="flex items-center justify-center">
+                      <span className="text-xs text-muted-foreground bg-muted/30 px-2 py-1 rounded">{item.context}</span>
                     </div>
                   </div>
                 ))}

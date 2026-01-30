@@ -337,32 +337,25 @@ const ManagerOverview = () => {
               <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
             </div>
             <div className="space-y-3">
-              {(data.teamRewards && data.teamRewards.length ? data.teamRewards : data.liveFeed).map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3 p-3 rounded-lg bg-muted/30">
-                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xs">
-                    {item.name ? item.name[0] : (item.agent || 'G')[0]}
+              {(data.teamRewards && data.teamRewards.length ? data.teamRewards : data.liveFeed).map((item, idx) => {
+                const rewardsList = ['Sipper', 'Headset', 'Bonus XPS', 'Bonus Points', 'Coffee Mug', 'T-Shirt', 'Cheers', 'Laptop Bag', 'Hoodie'];
+                const displayReward = rewardsList[idx % rewardsList.length];
+                return (
+                  <div key={idx} className="flex items-start gap-3 p-3 rounded-lg bg-muted/30">
+                    <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xs">
+                      {item.name ? item.name[0] : (item.agent || 'G')[0]}
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm text-foreground">
+                        <span className="font-medium">{item.name || item.agent}</span>{" "}
+                        <span className="text-muted-foreground">won</span>{" "}
+                        <span className="text-primary font-medium">{displayReward}</span>
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-0.5">{item.time || item.date || 'just now'} • {item.context || item.dept || 'Team'}</p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <p className="text-sm text-foreground">
-                            <span className="font-medium">{item.name || item.agent}</span>{" "}
-                            <span className="text-muted-foreground">won</span>{" "}
-                            {(() => {
-                              const raw = item.reward || item.prize || item.value || item.points || '';
-                              // If reward looks like a currency/amount, replace with a friendly reward name
-                              if (/\$|\d{3,}/.test(String(raw))) {
-                                const fallback = item.context || item.dept || '';
-                                // map to a small set of known rewards if context not helpful
-                                const known = ['Sipper','Headset','Bonus XPS','Bonus Points','Coffee Mug','T-Shirt','Cheers','Laptop Bag','Hoodie'];
-                                const pick = known[idx % known.length];
-                                return <span className="text-primary font-medium">{item.rewardName || item.prizeName || fallback || pick}</span>;
-                              }
-                              return <span className="text-primary font-medium">{raw || 'Points'}</span>;
-                            })()}
-                          </p>
-                    <p className="text-xs text-muted-foreground mt-0.5">{item.time || item.date || 'just now'} • {item.context || item.dept || 'Team'}</p>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </motion.div>
 
@@ -381,7 +374,7 @@ const ManagerOverview = () => {
                 {((data.teamRewards && data.teamRewards.length) ? data.teamRewards : [
                   { name: 'Nitha Thatikonda', reward: 'Headset', time: '2h ago', context: 'Q1 Drive' },
                   { name: 'Ravi Kumar', reward: 'Sipper', time: '1d ago', context: 'Daily Spins' },
-                  { name: 'Anita Sharma', reward: 'Cheers (5000)', time: '3d ago', context: 'Monthly Sprint' }
+                  { name: 'Anita Sharma', reward: 'Cheers', time: '3d ago', context: 'Monthly Sprint' }
                 ]).map((r, idx) => (
                   <div key={idx} className="flex items-center gap-3 p-3 rounded-lg bg-muted/30">
                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-pink-500 flex items-center justify-center text-white font-bold text-sm">
