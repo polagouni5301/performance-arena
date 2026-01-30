@@ -1010,7 +1010,7 @@ const RewardsAndAchievements = () => {
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 + idx * 0.03 }}
-                  whileHover={{ scale: 1.05 }}normalizeRewardName(win.reward)
+                  whileHover={{ scale: 1.05 }}
                   className="relative h-32 rounded-xl border border-purple-400/30 overflow-hidden cursor-pointer group"
                   style={{
                     background: "linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(236, 72, 153, 0.2) 100%)",
