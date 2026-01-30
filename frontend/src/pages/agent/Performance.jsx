@@ -750,7 +750,6 @@ const Performance = () => {
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
-                </div>
               </div>
             );
           })()}
