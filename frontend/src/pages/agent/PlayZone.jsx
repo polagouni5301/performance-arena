@@ -354,7 +354,7 @@ const PlayZone = () => {
 
       {/* Full-Screen Scratch Card Reveal Modal */}
       <ScratchCardRevealModal
-        isOpen={activeScratchCard !== null && todaysPerformance.meetsThreshold}
+        isOpen={activeScratchCard !== null}
         onClose={() => {
           setActiveScratchCard(null);
           setScratchRevealed(false);
