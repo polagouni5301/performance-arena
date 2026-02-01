@@ -89,10 +89,10 @@ const ProductionReport = ({ mandays = 0, guidesProcessed = 0, period = 'This Mon
               <div className="relative z-10 space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-xs text-muted-foreground/70 uppercase tracking-widest font-semibold">Mandays Completed</p>
+                    <p className="text-xs text-muted-foreground/70 uppercase tracking-widest font-semibold">Mandays Target </p>
                     <div className="mt-2 flex items-baseline gap-2">
-                      <span className="text-5xl font-black text-primary">{mandays}</span>
-                      <span className="text-lg text-muted-foreground font-bold">md</span>
+                      <span className="text-5xl font-black text-primary">25</span>
+                      <span className="text-lg text-muted-foreground font-bold">Days</span>
                     </div>
                   </div>
                   <motion.div
@@ -123,12 +123,9 @@ const ProductionReport = ({ mandays = 0, guidesProcessed = 0, period = 'This Mon
                 <div className="flex gap-2 pt-2 border-t border-primary/20">
                   <div className="flex-1">
                     <p className="text-[10px] text-muted-foreground/60">Target</p>
-                    <p className="text-sm font-bold text-primary/80">100 md</p>
+                    <p className="text-sm font-bold text-primary/80">200 Hour's</p>
                   </div>
-                  <div className="flex-1">
-                    <p className="text-[10px] text-muted-foreground/60">Remaining</p>
-                    <p className="text-sm font-bold text-warning">{Math.max(0, 100 - mandays)} md</p>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -149,10 +146,10 @@ const ProductionReport = ({ mandays = 0, guidesProcessed = 0, period = 'This Mon
               <div className="relative z-10 space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-xs text-muted-foreground/70 uppercase tracking-widest font-semibold">Guides Processed</p>
+                    <p className="text-xs text-muted-foreground/70 uppercase tracking-widest font-semibold">Guides Achieved</p>
                     <div className="mt-2 flex items-baseline gap-2">
-                      <span className="text-5xl font-black text-secondary">{guidesProcessed}</span>
-                      <span className="text-lg text-muted-foreground font-bold">docs</span>
+                      <span className="text-5xl font-black text-secondary">23</span>
+                      <span className="text-lg text-muted-foreground font-bold">Days</span>
                     </div>
                   </div>
                   <motion.div
@@ -167,13 +164,13 @@ const ProductionReport = ({ mandays = 0, guidesProcessed = 0, period = 'This Mon
                 <div className="space-y-2">
                   <div className="flex justify-between items-center">
                     <span className="text-xs text-muted-foreground">Progress</span>
-                    <span className="text-xs font-bold text-secondary">{Math.round(guidesPercentage)}%</span>
+                    <span className="text-xs font-bold text-secondary">85%</span>
                   </div>
                   <div className="h-3 bg-black/30 rounded-full overflow-hidden border border-secondary/20">
                     <motion.div 
                       className="h-full bg-gradient-to-r from-secondary via-secondary/80 to-cyan-500 rounded-full shadow-[0_0_20px_rgba(var(--secondary-rgb),0.5)]"
                       initial={{ width: 0 }}
-                      animate={{ width: `${guidesPercentage}%` }}
+                      animate={{ width: "85%" }}
                       transition={{ delay: 0.7, duration: 1, ease: "easeOut" }}
                     />
                   </div>
@@ -183,11 +180,11 @@ const ProductionReport = ({ mandays = 0, guidesProcessed = 0, period = 'This Mon
                 <div className="flex gap-2 pt-2 border-t border-secondary/20">
                   <div className="flex-1">
                     <p className="text-[10px] text-muted-foreground/60">Target</p>
-                    <p className="text-sm font-bold text-secondary/80">100 docs</p>
+                    <p className="text-sm font-bold text-secondary/80">200 Hour's</p>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[10px] text-muted-foreground/60">Remaining</p>
-                    <p className="text-sm font-bold text-warning">{Math.max(0, 100 - guidesProcessed)} docs</p>
+                    <p className="text-[10px] text-muted-foreground/60">Completed</p>
+                    <p className="text-sm font-bold text-warning">184 Hour's</p>
                   </div>
                 </div>
               </div>

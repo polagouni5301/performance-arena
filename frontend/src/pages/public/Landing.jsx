@@ -8,8 +8,9 @@ import GamifiedBackground from "@/components/effects/GamifiedBackground";
 import vrGamerHero from "@/assets/vr-gamer-hero.png";
 import warriorKnight3d from "@/assets/warrior-knight-3d.png";
 import goldenTrophy3d from "@/assets/golden-trophy-3d.png";
-import genpactLogo from "@/assets/genpact-logo.svg";
-import godaddyLogo from "@/assets/godaddy-logo.svg";
+import genpactLogo from "@/assets/logogenpactt.png";
+import siteLogo from "@/assets/site-logo.png"
+import godaddyLogo from "@/assets/logogodaddy.png";
 import ProductionReport from '@/components/ui/ProductionReport';
 import RewardsGallery from '@/components/ui/RewardsGallery';
 
@@ -128,9 +129,20 @@ const Landing = () => {
       />
 
       {/* Navigation */}
-      <nav className="relative z-50 flex items-center justify-between px-4 sm:px-6 lg:px-12 py-3 sm:py-4 border-b border-border/20 backdrop-blur-sm">
+      <nav className="relative z-50 flex items-center justify-between px-4 sm:px-6 lg:px-12 py-3 border-b border-border/20 backdrop-blur-sm">
+
+
+
+
+      <div className="flex items-center gap-3">
+              {/* Genpact next to brand */}
+              <img src={genpactLogo} 
+               alt="Genpact" 
+              className="h-22 w-60 object-contain" />
+            </div>
+        
         <motion.div 
-          className="flex items-center gap-2 sm:gap-3"
+          className="flex items-center gap-1 sm:gap-3"
           whileHover={{ scale: 1.02 }}
         >
           <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-[0_0_25px_hsla(280,100%,60%,0.5)]">
@@ -145,62 +157,37 @@ const Landing = () => {
           <span className="font-display font-bold text-lg sm:text-xl text-foreground tracking-wide">
             ga<span className="text-primary">ME</span>trix
           </span>
+          
+          
         </motion.div>
 
-        <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-muted-foreground">
-          <button onClick={() => navigate('/login')} className="hover:text-primary transition-colors flex items-center gap-1.5">
-            <Trophy className="w-4 h-4" /> Leaderboard
-          </button>
-          <button onClick={() => navigate('/login')} className="hover:text-primary transition-colors flex items-center gap-1.5">
-            <Gift className="w-4 h-4" /> Rewards
-          </button>
-          <button onClick={() => navigate('/login')} className="hover:text-primary transition-colors flex items-center gap-1.5">
-            <Target className="w-4 h-4" /> Contests
-          </button>
-        </div>
+       
+         {/* <motion.div
+  className="flex items-center gap-3 cursor-pointer"
+  whileHover={{ scale: 1.03 }}
+  whileTap={{ scale: 0.98 }}
+>
+  <img
+    src={siteLogo}
+    alt="gaMEtrix"
+    className="h-30  w-55 rounded-lg"
+  />
+</motion.div> */}
 
-        <div className="flex items-center gap-2 sm:gap-3">
-          <button 
-            onClick={() => navigate('/login')}
-            className="hidden sm:block px-4 py-2 text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Log In
-          </button>
-          <motion.button
-            onClick={handleEnterArena}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-primary to-pink-600 text-white font-bold text-xs sm:text-sm shadow-[0_0_25px_hsla(320,100%,55%,0.4)] hover:shadow-[0_0_35px_hsla(320,100%,55%,0.6)] transition-shadow"
-          >
-            PLAY NOW
-          </motion.button>
-        </div>
+        
+        <div className="flex items-center ">
+              <img src={godaddyLogo}
+
+              alt="GoDaddy"  className="h-15 w-60 object-contain"  />
+            </div>
+        
       </nav>
-
-          {/* Small Logs badge under navbar (left) and partner logos placement */}
-          <div className="relative z-40 container mx-auto px-4 sm:px-6 lg:px-12 mt-2 mb-2 flex items-start justify-between">
-            <div className="flex items-center gap-3">
-              {/* Genpact next to brand */}
-              <img src={genpactLogo} alt="Genpact" className="h-6 sm:h-8 opacity-95 ml-3" />
-            </div>
-            {/* GoDaddy at far right */}
-            <div className="flex items-center gap-3">
-              <img src={godaddyLogo} alt="GoDaddy" className="h-8 opacity-95" />
-            </div>
-          </div>
-
-          {/* Logs block under navbar, left aligned */}
-          <div className="container mx-auto px-4 sm:px-6 lg:px-12 -mt-2 mb-4">
-            <div className="flex items-center gap-3">
-              <div className="px-3 py-1 rounded-md bg-muted/50 border border-border text-xs text-muted-foreground">
-                Logs: connected • last 5 entries
-              </div>
-            </div>
-          </div>
+         
 
       {/* Hero Section */}
       <section className="relative z-10 min-h-[90vh] sm:min-h-[85vh] flex items-center">
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 pt-2 sm:pt-4 pb-8">
+
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="max-w-2xl">

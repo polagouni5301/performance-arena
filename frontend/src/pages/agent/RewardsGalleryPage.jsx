@@ -10,20 +10,32 @@ import points from '@/assets/rewardsimgs/points.png';
 import tShirt from '@/assets/rewardsimgs/t-shirt.png';
 import xps from '@/assets/rewardsimgs/xps.png';
 
+import earbuds from '@/assets/rewardsimgs/earbuds.png';
+import whitehoodie from '@/assets/rewardsimgs/white-hoodie.png';
+import sipper from '@/assets/rewardsimgs/sipper.png';
+
+
+
+
 const sampleRewards = [
   { id: 'sipper', name: 'Sipper', key: 'sipper' },
   { id: 'headset', name: 'Headset', key: 'headset' },
-  { id: 'bonus-xps', name: 'Bonus XPS', key: 'bonus-xps' },
-  { id: 'bonus-points', name: 'Bonus Points', key: 'bonus-points' },
+  
   { id: 'coffee-mug', name: 'Coffee Mug', key: 'coffee-mug' },
   { id: 't-shirt', name: 'T-Shirt', key: 't-shirt' },
-  { id: 'cheers', name: 'Cheers', key: 'cheers' },
+  
   { id: 'laptop-bag', name: 'Laptop Bag', key: 'laptop-bag' },
-  { id: 'hoodie', name: 'Hoodie', key: 'hoodie' }
+  { id: 'hoodie', name: 'Hoodie', key: 'hoodie' },
+  { id: 'earbuds', name: 'earbuds', key: 'earbuds' },
+  { id: 'white-hoodie', name: 'Hoodie', key: 'white-hoodie' },
+  { id: 'bonus-xps', name: 'Bonus XPS', key: 'bonus-xps' },
+  { id: 'bonus-points', name: 'Bonus Points', key: 'bonus-points' },
+  { id: 'cheers', name: 'Cheers', key: 'cheers' },
+ 
 ];
 
 const images = {
-  'sipper': coffeeMug,
+  'sipper': sipper,
   'headset': headset,
   'bonus-xps': xps,
   'bonus-points': points,
@@ -32,6 +44,8 @@ const images = {
   'cheers': cheersPoints,
   'laptop-bag': laptopBag,
   'hoodie': hoodie,
+  'white-hoodie': whitehoodie,
+  'earbuds': earbuds,
 };
 
 const RewardsGalleryPage = () => {

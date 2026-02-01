@@ -1,8 +1,3 @@
-/**
- * Enhanced 3D Spin Wheel Component
- * Features: Advanced 3D effects, depth shadows, particle system, premium animations
- * Used as modal popup in PlayZone page
- */
 
 import React, { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,10 +7,7 @@ import Scene3D from "./Scene3D";
 import FloatingBalloons from "./FloatingBalloons";
 import { createPortal } from "react-dom";
 
-/**
- * Backend Spin Wheel Prizes Configuration
- * Maps backend rewards to visual wheel segments with colors and icons
- */
+
 const PRIZE_CONFIG = [
   { label: "+500", sublabel: "PTS", icon: Star, color: "#ff4d4d", points: 500, xp: 0, tone: "primary" },
   { label: "+100", sublabel: "XP", icon: Zap, color: "#4da6ff", points: 0, xp: 100, tone: "secondary" },

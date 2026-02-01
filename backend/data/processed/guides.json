@@ -2252,8 +2252,12 @@
         "stockCount": 50
       }
     ],
-    "registered": false,
-    "loginInfo": null
+    "registered": true,
+    "loginInfo": {
+      "email": "akhila@company.info",
+      "password": "admin123",
+      "name": "akhila"
+    }
   },
   "703345300": {
     "guide_id": "703345300",

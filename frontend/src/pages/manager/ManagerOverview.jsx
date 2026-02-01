@@ -56,7 +56,7 @@ const ManagerOverview = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+      <div className="flex flex lg:flex-row lg:items-center lg:justify-between gap-4">
         <div>
           <h1 className="text-2xl lg:text-3xl font-bold text-foreground" style={{ fontFamily: "'Sora', sans-serif" }}>
             Strategic Overview
@@ -75,7 +75,7 @@ const ManagerOverview = () => {
         {/* Left Column */}
         <div className="space-y-6">
           {/* Key Metrics Row */}
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 gap-4">
             {/* Team XPS */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -197,7 +197,7 @@ const ManagerOverview = () => {
           </motion.div>
 
           {/* Bottom Cards Row */}
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-1 gap-4">
             {/* Top Performers */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -228,7 +228,7 @@ const ManagerOverview = () => {
                       <p className="text-xs text-muted-foreground">{performer.dept}</p>
                     </div>
                     <div className="px-2 py-1 rounded bg-accent/20 text-accent text-xs font-bold">
-                      {(performer.xp / 1000).toFixed(0)}K XP
+                      80 XP
                     </div>
                   </div>
                 ))}
@@ -236,39 +236,7 @@ const ManagerOverview = () => {
             </motion.div>
 
             {/* Attention Needed */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="p-5 rounded-xl glass-card border border-border/50"
-            >
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-2">
-                  <AlertTriangle className="w-5 h-5 text-destructive" />
-                  <span className="font-semibold text-foreground uppercase text-sm tracking-wide">Attention Needed</span>
-                </div>
-                <button className="text-xs text-primary hover:underline">View All</button>
-              </div>
-              <div className="space-y-3">
-                {data.attentionNeeded.map((agent, idx) => (
-                  <div key={idx} className="flex items-center gap-3 p-3 rounded-lg bg-muted/30">
-                    <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground font-bold text-sm">
-                      {agent.name.split(" ").map((n) => n[0]).join("")}
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-medium text-foreground text-sm">{agent.name}</p>
-                      <p className="text-xs text-destructive flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 rounded-full bg-destructive" />
-                        {agent.issue}
-                      </p>
-                    </div>
-                    <button className="px-3 py-1.5 rounded-lg bg-primary/20 text-primary text-xs font-medium hover:bg-primary/30 transition-colors capitalize">
-                      {agent.type}
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+            
           </div>
         </div>
 

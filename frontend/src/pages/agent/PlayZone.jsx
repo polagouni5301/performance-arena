@@ -1,9 +1,11 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Lock,
   Star,
+  ArrowRight,
   Sparkles,
   Gift,
   Zap,
@@ -333,12 +335,7 @@ const PlayZone = () => {
           </motion.div>
 
           {/* Scratch Cards - Takes 1 column on XL */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="xl:col-span-1"
-          >
+         
             <div className="arena-panel p-4 border border-accent/20 h-full">
               <ScratchCardShowcase
                 cards={scratchCards}
@@ -347,7 +344,7 @@ const PlayZone = () => {
                 onScratchCard={setActiveScratchCard}
               />
             </div>
-          </motion.div>
+         
         </div>
 
         {/* Daily Missions - Removed per Phase 1 updates */}

@@ -243,12 +243,12 @@ const ManagerLeaderboard = () => {
         className="rounded-3xl bg-card/50 backdrop-blur border border-border/50 overflow-hidden"
       >
         {/* Table Header */}
-        <div className="grid grid-cols-6 gap-4 p-5 border-b border-border bg-muted/30">
+        <div className="grid grid-cols-5 gap-4 p-5 border-b border-border bg-muted/30">
           <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Rank</div>
           <div className="col-span-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Agent</div>
           <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider text-center">Points</div>
           <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider text-center">Revenue</div>
-          <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider text-center">Movement</div>
+         
         </div>
 
         {/* Table Body */}
@@ -264,7 +264,7 @@ const ManagerLeaderboard = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1 + idx * 0.03 }}
                 whileHover={{ backgroundColor: "hsl(var(--muted) / 0.3)" }}
-                className="grid grid-cols-6 gap-4 p-5 transition-colors"
+                className="grid grid-cols-5 gap-4 p-5 transition-colors"
               >
                 {/* Rank */}
                 <div className="flex items-center">
@@ -311,16 +311,8 @@ const ManagerLeaderboard = () => {
                 </div>
 
                 {/* Trend */}
-                <div className="flex items-center justify-center">
-                  <div className={`flex items-center gap-1 px-3 py-1.5 rounded-lg ${trendInfo.bg}`}>
-                    <TrendIcon className={`w-4 h-4 ${trendInfo.color}`} />
-                    {agent.trend !== 0 && (
-                      <span className={`text-xs font-medium ${trendInfo.color}`}>
-                        {Math.abs(agent.trend)}
-                      </span>
-                    )}
-                  </div>
-                </div>
+                
+              
               </motion.div>
             );
           })}

@@ -9,6 +9,7 @@ import {
   Gift,
   Clock,
   AlertCircle,
+  ArrowRight,
   CheckCircle,
   Star,
   Sparkles,
@@ -17,6 +18,7 @@ import {
   Timer,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 // Helper function to parse expiry string and convert to seconds
 const parseExpiryToSeconds = (expiresIn) => {
@@ -328,30 +330,7 @@ const ScratchCardShowcase = ({
         </motion.div>
       )}
 
-      {/* Pending Cards - Vertical List (Compact Horizontal Design) */}
-      {pendingCards.length > 0 && (
-        <div>
-          <h4 className="text-xs font-bold text-foreground mb-2 flex items-center gap-2 font-oxanium tracking-wide">
-            <Zap className="w-3.5 h-3.5 text-warning" />
-            PENDING ({pendingCards.length})
-            <span className="text-[9px] text-muted-foreground font-normal font-mono ml-auto">LIVE</span>
-          </h4>
-          <div className="space-y-2">
-            {pendingCards.map((card, idx) => {
-              const styles = getStatusStyles(card.status);
-              return (
-                <PendingCard
-                  key={card.id}
-                  card={card}
-                  idx={idx}
-                  onScratch={onScratchCard}
-                  styles={styles}
-                />
-              );
-            })}
-          </div>
-        </div>
-      )}
+     
 
       {/* Claimed & Expired Cards (Timeline View) */}
       <div className="space-y-3">
@@ -359,7 +338,74 @@ const ScratchCardShowcase = ({
           <Clock className="w-4 h-4 text-secondary" />
           Card History
         </h4>
-        
+        <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="p-5 rounded-2xl border bg-gradient-to-r from-accent/10 via-card to-warning/10 border-accent/30"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <Gift className="w-5 h-5 text-accent" />
+                <h3 className="text-lg font-bold text-foreground">Your Rewards</h3>
+                <span className="px-2 py-0.5 rounded-full bg-success/20 text-success text-[10px] font-bold">THRESHOLD MET ✓</span>
+              </div>
+              <Link to="/agent/play" className="text-sm text-primary hover:underline flex items-center gap-1">
+                View All <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
+              {/* Pending Cards */}
+              {[1, 2, 3].map((idx) => (
+                <Link to="/agent/play" key={`pending-${idx}`}>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: idx * 0.1 }}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="aspect-square rounded-xl bg-gradient-to-br from-accent/20 to-warning/20 border-2 border-accent/40 flex flex-col items-center justify-center p-3 cursor-pointer relative overflow-hidden group"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer" />
+                    <Gift className="w-8 h-8 text-accent mb-2 group-hover:animate-bounce" />
+                    <span className="text-[10px] text-accent font-bold uppercase">Scratch Me</span>
+                    <span className="text-[9px] text-muted-foreground mt-1 flex items-center gap-1">
+                      <Clock className="w-3 h-3" /> {23 - idx * 5}h left
+                    </span>
+                  </motion.div>
+                </Link>
+              ))}
+
+              {/* Today's Card */}
+              <Link to="/agent/play">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  className="aspect-square rounded-xl bg-gradient-to-br from-success/20 to-secondary/20 border-2 border-success/50 flex flex-col items-center justify-center p-3 cursor-pointer relative overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent animate-shimmer" />
+                  <Sparkles className="w-8 h-8 text-success mb-2" />
+                  <span className="text-[10px] text-success font-bold uppercase">New Today!</span>
+                </motion.div>
+              </Link>
+
+              {/* Claimed Cards */}
+              {[1, 2].map((idx) => (
+                <motion.div
+                  key={`claimed-${idx}`}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: (idx + 3) * 0.1 }}
+                  className="aspect-square rounded-xl bg-muted/30 border border-border/50 flex flex-col items-center justify-center p-3 opacity-60"
+                >
+                  <CheckCircle className="w-6 h-6 text-success/60 mb-2" />
+                  <span className="text-[10px] text-muted-foreground font-medium">+{idx * 250} PTS</span>
+                  <span className="text-[9px] text-muted-foreground">Claimed</span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         <div className="space-y-2">
           {[...scratchedCards, ...expiredCards]
             .sort((a, b) => b.id - a.id)

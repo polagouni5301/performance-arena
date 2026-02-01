@@ -5,9 +5,9 @@
     "period_type": "current",
     "rank": 1,
     "previous_rank": 2,
-    "total_points": 537,
-    "total_xp": 809,
-    "score": 179
+    "total_points": 222,
+    "total_xp": 858,
+    "score": 149
   },
   {
     "user_id": 703425663,
@@ -15,9 +15,9 @@
     "period_type": "current",
     "rank": 2,
     "previous_rank": 3,
-    "total_points": 698,
-    "total_xp": 973,
-    "score": 84
+    "total_points": 412,
+    "total_xp": 1027,
+    "score": 115
   },
   {
     "user_id": 703316290,
@@ -25,9 +25,9 @@
     "period_type": "current",
     "rank": 3,
     "previous_rank": 4,
-    "total_points": 383,
-    "total_xp": 1286,
-    "score": 148
+    "total_points": 449,
+    "total_xp": 1387,
+    "score": 134
   },
   {
     "user_id": 703346801,
@@ -35,9 +35,9 @@
     "period_type": "current",
     "rank": 4,
     "previous_rank": 5,
-    "total_points": 423,
-    "total_xp": 570,
-    "score": 114
+    "total_points": 555,
+    "total_xp": 936,
+    "score": 115
   },
   {
     "user_id": 703347115,
@@ -45,9 +45,9 @@
     "period_type": "current",
     "rank": 5,
     "previous_rank": 6,
-    "total_points": 567,
-    "total_xp": 948,
-    "score": 144
+    "total_points": 408,
+    "total_xp": 1038,
+    "score": 124
   },
   {
     "user_id": 703341431,
@@ -55,9 +55,9 @@
     "period_type": "current",
     "rank": 6,
     "previous_rank": 7,
-    "total_points": 271,
-    "total_xp": 762,
-    "score": 142
+    "total_points": 498,
+    "total_xp": 741,
+    "score": 166
   },
   {
     "user_id": 703290400,
@@ -65,9 +65,9 @@
     "period_type": "current",
     "rank": 7,
     "previous_rank": 8,
-    "total_points": 206,
-    "total_xp": 1301,
-    "score": 84
+    "total_points": 270,
+    "total_xp": 1253,
+    "score": 167
   },
   {
     "user_id": 703313188,
@@ -75,9 +75,9 @@
     "period_type": "current",
     "rank": 8,
     "previous_rank": 9,
-    "total_points": 280,
-    "total_xp": 1260,
-    "score": 179
+    "total_points": 547,
+    "total_xp": 685,
+    "score": 165
   },
   {
     "user_id": 703336567,
@@ -85,9 +85,9 @@
     "period_type": "current",
     "rank": 9,
     "previous_rank": 10,
-    "total_points": 694,
-    "total_xp": 858,
-    "score": 168
+    "total_points": 284,
+    "total_xp": 1122,
+    "score": 108
   },
   {
     "user_id": 703231006,
@@ -95,8 +95,8 @@
     "period_type": "current",
     "rank": 10,
     "previous_rank": 11,
-    "total_points": 530,
-    "total_xp": 932,
-    "score": 101
+    "total_points": 420,
+    "total_xp": 748,
+    "score": 174
   }
 ]
