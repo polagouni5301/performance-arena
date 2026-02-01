@@ -311,12 +311,21 @@ const ScratchCardShowcase = ({
             
             {meetsThreshold ? (
               <motion.button
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, boxShadow: "0 0 30px hsla(var(--accent), 0.5)" }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => onScratchCard?.(0)}
-                className="px-5 py-3 rounded-xl bg-gradient-to-r from-accent to-warning text-accent-foreground font-bold text-sm uppercase tracking-wider shadow-lg shadow-accent/30"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log("Scratch Now clicked - triggering modal");
+                  if (onScratchCard) {
+                    onScratchCard({ id: 'today', status: 'pending', reward: '???', date: 'Today' });
+                  }
+                }}
+                className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-accent via-warning to-accent text-accent-foreground font-bold text-sm uppercase tracking-wider shadow-lg shadow-accent/40 hover:shadow-accent/60 transition-all animate-pulse"
               >
-                Scratch Now!
+                <span className="flex items-center gap-2">
+                  <Sparkles className="w-4 h-4" />
+                  Scratch Now!
+                </span>
               </motion.button>
             ) : (
               <div className="text-right">

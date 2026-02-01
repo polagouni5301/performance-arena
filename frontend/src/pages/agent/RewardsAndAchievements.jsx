@@ -303,9 +303,26 @@ const RewardsAndAchievements = () => {
             </div>
           </div>
 
-          
-         </motion.header>.
-          <div className="glass-card-hero p-8 relative overflow-hidden">
+          {/* Stats */}
+          <div className="flex items-center gap-3">
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              className="px-4 py-2.5 rounded-xl bg-accent/10 border border-accent/30"
+            >
+              <p className="text-[10px] text-accent/70 uppercase tracking-wider">Level</p>
+              <p className="text-lg font-bold text-accent">{achievementsData.level}</p>
+            </motion.div>
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              className="px-4 py-2.5 rounded-xl bg-primary/10 border border-primary/30"
+            >
+              <p className="text-[10px] text-primary/70 uppercase tracking-wider">XP</p>
+              <p className="text-lg font-bold text-primary">{animatedXP.toLocaleString()}</p>
+            </motion.div>
+          </div>
+        </motion.header>
+
+        <div className="glass-card-hero p-8 relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl" />
@@ -967,7 +984,7 @@ const RewardsAndAchievements = () => {
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">normalizeRewardName(card.name)
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {/* Scratch Card History */}
               {(rewardsData?.scratchCards || []).filter(c => c.status !== "pending").map((card, idx) => (
                 <motion.div
