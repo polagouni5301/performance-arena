@@ -24,7 +24,7 @@ import {
 import { cn } from "../../lib/utils";
 import EliteSpinWheel from "../../components/game/EliteSpinWheel";
 import SpinWheelModal from "../../components/game/SpinWheelModal";
-import SpinWheelNew from "../../components/game/SpinWheelNew";
+import SpinWheelNew from "../../components/SpinWHeel/SpinningWheel";
 import ScratchCardRevealModal from "../../components/game/ScratchCardRevealModal";
 import SpinWheelBanner from "../../components/game/SpinWheelBanner";
 import WeeklyChallenges from "../../components/game/WeeklyChallenges";
